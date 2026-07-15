@@ -1129,6 +1129,48 @@ button:disabled {
   text-transform: uppercase;
 }
 
+.approach-explainer {
+  position: absolute;
+  z-index: 11;
+  top: 62px;
+  left: 50%;
+  display: grid;
+  min-width: min(360px, calc(100% - 32px));
+  max-width: min(480px, calc(100% - 32px));
+  transform: translateX(-50%);
+  gap: 2px;
+  border-top: 1px solid rgba(199, 243, 107, 0.48);
+  border-bottom: 1px solid rgba(199, 243, 107, 0.2);
+  background: linear-gradient(90deg, transparent, rgba(6, 16, 14, 0.92), transparent);
+  padding: 9px 24px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.approach-explainer small {
+  color: var(--primary);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.approach-explainer strong {
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  font-stretch: condensed;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.approach-explainer span {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
 .killcam-callout {
   position: absolute;
   z-index: 21;

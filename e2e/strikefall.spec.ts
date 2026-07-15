@@ -86,7 +86,7 @@ test('home screen is usable and visually contained', async ({ page }, testInfo) 
   const dialog = page.getByRole('dialog', { name: 'How to survive' })
   await expect(dialog).toBeVisible()
   await expect(dialog).toContainText(
-    'Plant one flag outside the line. One touch destroys it. The most points at the end wins the round.',
+    'Planting a flag buys a knock-out option at your strike. One touch destroys it. The most points at the end wins the round.',
   )
   await expect(dialog.getByText('Find clean air.')).toBeVisible()
   await page.keyboard.press('Escape')

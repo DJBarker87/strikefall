@@ -11,7 +11,11 @@ import {
 } from 'react'
 
 import type { Candle, Contender, FlagSide, GamePhase, RoundState } from '../game/types'
-import { estimateSurvivalProbability, getContenderEscapeQuote } from '../game'
+import {
+  estimateSurvivalProbability,
+  getContenderEscapeQuote,
+  legalDistanceBounds,
+} from '../game'
 import { derivePersonaTell, type PersonaTellState } from './personaTells'
 
 export interface ArenaPlacement {
@@ -375,6 +379,23 @@ function buildView(
     if (approachValues.length > 0) {
       upperExtent = Math.max(upperExtent, Math.max(...approachValues) - line)
       lowerExtent = Math.max(lowerExtent, line - Math.min(...approachValues))
+    }
+    if (round.phase !== 'home') {
+      // Frame the entire legal strike band for the whole pre-battle sequence.
+      // Deck, tape, placement, and lock share one static window, so the zoom
+      // never moves while the player reads history or plants their strike.
+      try {
+        upperExtent = Math.max(
+          upperExtent,
+          legalDistanceBounds(line, 'upper', round.lineValueFixed).maximum,
+        )
+        lowerExtent = Math.max(
+          lowerExtent,
+          legalDistanceBounds(line, 'lower', round.lineValueFixed).maximum,
+        )
+      } catch {
+        // Engine not ready: fall back to the contender-driven extents.
+      }
     }
   }
 
@@ -963,7 +984,10 @@ function drawLiveCandles(
       low = Math.min(low, point.low)
     }
 
-    const x = (battleChartX(startFrame, round, view) + battleChartX(endFrame, round, view)) / 2
+    // Anchor every candle at its bucket's final center so the forming candle
+    // fills in place instead of sliding right as frames accumulate.
+    const bucketEnd = Math.min(round.battlePath.length - 1, startFrame + BATTLE_CANDLE_FRAMES)
+    const x = (battleChartX(startFrame, round, view) + battleChartX(bucketEnd, round, view)) / 2
     const rising = close >= open
     const color = rising ? palette.safe : palette.danger
     const live = round.phase === 'battle' && endFrame === lastIndex

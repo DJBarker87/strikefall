@@ -1611,6 +1611,14 @@ function StrikefallGameApp({ autoStartFresh = false }: { autoStartFresh?: boolea
               <div className="battle-hint"><span aria-hidden="true" /> {alive} flags still standing</div>
             )}
 
+            {round.phase === 'approach' && (
+              <div className="approach-explainer" role="status">
+                <small>Step 1 of 3 · Watching history</small>
+                <strong>This tape already happened</strong>
+                <span>Read its mood. Next you buy a call (above) or put (below) strike, then the line goes live.</span>
+              </div>
+            )}
+
             {round.phase === 'battle'
               // Keep the opening beat readable on slower mobile devices; the
               // two-second impact camera remains reserved for eliminations.
@@ -2151,14 +2159,14 @@ function StrikefallGameApp({ autoStartFresh = false }: { autoStartFresh?: boolea
         </header>
         <div className="help-dialog__body">
           <p id="help-summary" className="rule-summary">
-            Plant one flag outside the line. One touch destroys it. The most points at the end wins the round.
+            Planting a flag buys a knock-out option at your strike. One touch destroys it. The most points at the end wins the round.
           </p>
           <ol className="rule-list">
-            <li><span className="rule-list__number">01</span><span><strong>Read the deck.</strong><span>The approach candles reveal the mood; the deck tells you when pressure is concentrated.</span></span></li>
-            <li><span className="rule-list__number">02</span><span><strong>Plant above or below.</strong><span>Drag in the arena or use the slider. Closer flags pay more because they are easier to hit.</span></span></li>
-            <li><span className="rule-list__number">03</span><span><strong>Find clean air.</strong><span>Flags packed into the same risk band dilute one another. Move away from the crowd before lock.</span></span></li>
-            <li><span className="rule-list__number">04</span><span><strong>Hold or Escape.</strong><span>One strike destroys the flag. Once Escape opens, it can bank the live value of your locked score exactly once.</span></span></li>
-            <li><span className="rule-list__number">05</span><span><strong>Points win, not survival.</strong><span>Final rank sorts by score alone: a banked Escape counts in full against every held flag, and a struck flag scores zero.</span></span></li>
+            <li><span className="rule-list__number">01</span><span><strong>Watch the history.</strong><span>The candles that print first already happened — they are the tape before your round. Read the mood; the deck tells you when pressure is concentrated.</span></span></li>
+            <li><span className="rule-list__number">02</span><span><strong>Buy your strike.</strong><span>Above the line is a call, below is a put. Drag in the arena or use the slider. Closer strikes pay more because they are easier to hit.</span></span></li>
+            <li><span className="rule-list__number">03</span><span><strong>Find clean air.</strong><span>Strikes packed into the same risk band dilute one another. Move away from the crowd before lock.</span></span></li>
+            <li><span className="rule-list__number">04</span><span><strong>Hold or sell (Escape).</strong><span>Your option is priced live: payout × no-touch odds. One touch knocks it out. Once Escape opens, you can sell the position back exactly once and bank the premium.</span></span></li>
+            <li><span className="rule-list__number">05</span><span><strong>Points win, not survival.</strong><span>Final rank sorts by score alone: a sold option counts in full against every held flag, and a knocked-out flag scores zero.</span></span></li>
           </ol>
         </div>
       </dialog>
