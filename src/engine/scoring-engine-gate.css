@@ -1,0 +1,95 @@
+.scoring-gate {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  color: #f3f7e8;
+  background:
+    radial-gradient(circle at 50% 22%, rgb(199 243 107 / 12%), transparent 34%),
+    linear-gradient(150deg, #071310, #020605 68%);
+}
+
+.scoring-gate__panel {
+  width: min(520px, 100%);
+  padding: clamp(28px, 6vw, 52px);
+  text-align: center;
+  border: 1px solid rgb(199 243 107 / 22%);
+  border-radius: 28px;
+  background: rgb(4 12 10 / 88%);
+  box-shadow: 0 28px 90px rgb(0 0 0 / 48%), inset 0 1px rgb(255 255 255 / 5%);
+}
+
+.scoring-gate__mark {
+  width: 66px;
+  height: 66px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 22px;
+  color: #07100f;
+  font: 900 38px/1 system-ui, sans-serif;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #efffb8, #a6eb61);
+  box-shadow: 0 0 42px rgb(199 243 107 / 24%);
+}
+
+.scoring-gate__eyebrow {
+  margin: 0 0 10px;
+  color: #c7f36b;
+  font: 750 0.72rem/1.2 system-ui, sans-serif;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.scoring-gate h1 {
+  margin: 0;
+  font: 760 clamp(1.75rem, 6vw, 2.6rem)/1.02 system-ui, sans-serif;
+  letter-spacing: -0.045em;
+}
+
+.scoring-gate__message {
+  margin: 20px 0 8px;
+  color: #e8eedc;
+  font: 650 1rem/1.5 system-ui, sans-serif;
+}
+
+.scoring-gate__detail {
+  margin: 0 auto 24px;
+  max-width: 42ch;
+  color: #98a79e;
+  font: 500 0.86rem/1.55 system-ui, sans-serif;
+}
+
+.scoring-gate button {
+  min-height: 46px;
+  padding: 0 22px;
+  color: #07100f;
+  font: 800 0.88rem/1 system-ui, sans-serif;
+  border: 0;
+  border-radius: 999px;
+  background: #c7f36b;
+  cursor: pointer;
+}
+
+.scoring-gate button:focus-visible {
+  outline: 3px solid #ff7447;
+  outline-offset: 4px;
+}
+
+.scoring-gate__loader {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 4px auto 0;
+  border: 3px solid rgb(199 243 107 / 20%);
+  border-top-color: #c7f36b;
+  border-radius: 50%;
+  animation: scoring-gate-spin 0.8s linear infinite;
+}
+
+@keyframes scoring-gate-spin {
+  to { transform: rotate(1turn); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scoring-gate__loader { animation-duration: 1.8s; }
+}

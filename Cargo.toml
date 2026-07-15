@@ -1,0 +1,58 @@
+[workspace]
+members = [
+    "apps/round-service",
+    "crates/strikefall-core",
+    "crates/strikefall-protocol",
+    "crates/strikefall-wasm",
+    "tools/model-validation/rust-validator",
+    "tools/replay-inspector",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+# Agave 2.3's SBF platform toolchain uses Rust 1.84. The product remains
+# pinned to 1.85.1 for native/WASM CI, while this honest MSRV lets the exact
+# no_std core be linked into the downstream SBF measurement harness.
+rust-version = "1.84"
+version = "0.1.0"
+
+[workspace.dependencies]
+async-stream = "0.3.6"
+async-trait = "0.1.89"
+axum = "0.8.9"
+clap = { version = "4.6.1", features = ["derive"] }
+ed25519-dalek = "3.0.0"
+futures-core = "0.3.32"
+getrandom = "0.4.3"
+hex = "0.4.3"
+serde = { version = "1.0.228", default-features = false, features = ["derive"] }
+serde_json = "1.0.150"
+sha2 = "0.11.0"
+sqlx = { version = "0.8.6", default-features = false, features = ["json", "macros", "migrate", "postgres", "runtime-tokio-rustls"] }
+solmath = { version = "=0.2.0", default-features = false, features = ["transcendental"] }
+thiserror = "2.0.18"
+tokio = { version = "1.52.3", features = ["macros", "net", "rt-multi-thread", "signal", "sync", "time"] }
+tower = { version = "0.5.3", features = ["util"] }
+tower-http = { version = "0.7.0", features = ["cors", "trace"] }
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }
+uuid = { version = "1.23.5", features = ["serde", "v4"] }
+wasm-bindgen = "0.2.100"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+missing_errors_doc = "allow"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+overflow-checks = true
+panic = "abort"
+strip = true

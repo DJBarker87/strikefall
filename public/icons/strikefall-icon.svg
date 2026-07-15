@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Strikefall">
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="42%" r="70%">
+      <stop offset="0" stop-color="#17342b"/>
+      <stop offset="1" stop-color="#07100f"/>
+    </radialGradient>
+    <linearGradient id="bolt" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#eaff9d"/>
+      <stop offset="1" stop-color="#9fe95f"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#halo)"/>
+  <circle cx="256" cy="256" r="187" fill="none" stroke="#23483c" stroke-width="3"/>
+  <circle cx="256" cy="256" r="149" fill="none" stroke="#c7f36b" stroke-opacity=".12" stroke-width="11" stroke-dasharray="3 26"/>
+  <path d="M285 64 119 291h102l-24 164 196-264H292L285 64Z" fill="url(#bolt)"/>
+  <path d="M286 65 119 291h102" fill="none" stroke="#f6ffd4" stroke-opacity=".55" stroke-width="8" stroke-linecap="round"/>
+</svg>

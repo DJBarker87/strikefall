@@ -1,0 +1,13 @@
+[package]
+name = "strikefall-model-validator"
+description = "Release validator for Strikefall high-precision model corpora"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+strikefall-core = { path = "../../../crates/strikefall-core" }
+
+[lints]
+workspace = true

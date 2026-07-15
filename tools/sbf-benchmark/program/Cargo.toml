@@ -1,0 +1,35 @@
+[package]
+name = "strikefall-sbf-benchmark"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "strikefall_sbf_benchmark"
+
+[features]
+default = []
+quote = ["dep:strikefall-core"]
+# Declared for the official entrypoint macro's configuration probes. The
+# harness uses its defaults and never enables these flags.
+custom-heap = []
+custom-panic = []
+
+[dependencies]
+solana-account-info = "=2.3.0"
+solana-msg = "=2.2.1"
+solana-program-entrypoint = "=2.3.0"
+solana-program-error = "=2.2.2"
+solana-pubkey = { version = "=2.4.0", default-features = false }
+strikefall-core = { path = "../../../crates/strikefall-core", optional = true }
+
+[profile.release]
+codegen-units = 1
+lto = "fat"
+overflow-checks = true
+strip = true
+
+# Keep the deployment harness isolated from the product workspace so its
+# Solana SDK lockfile and release profile cannot alter server/WASM builds.
+[workspace]

@@ -1,0 +1,495 @@
+{
+  "catalog_digest": "9f98b92827c865c55721725a4110601c3799f3b3e8409829b31bfc28124204c5",
+  "catalog_rules": {
+    "minimum_pairwise_shape_distance_ppm": 100000,
+    "require_equal_total_variance": true
+  },
+  "catalog_version": 2,
+  "decks": [
+    {
+      "allowed_initial_survival": {
+        "max": "900000000000",
+        "min": "120000000000",
+        "scale": "1000000000000"
+      },
+      "approach_steps": 60,
+      "audio": {
+        "profile": "steady_pressure"
+      },
+      "battle_steps": 240,
+      "calibration_digest": "83a85e65660bb64214c24bb7f3fa769a6bfb54ad657d3093c60b9d48b80cf06a",
+      "calibration_evidence": {
+        "method": "cluster_nearest",
+        "selected_cluster_id": "cluster_03",
+        "source_calibration_digest": "f96678f938085b1b17a62318ef8332478f3b56eb5b78160d31cff71cb9651a15",
+        "target_distance_ppm_squared": "0"
+      },
+      "continuation_rule": {
+        "kind": "neutral"
+      },
+      "display_name": "Balanced Tape",
+      "drift_per_variance": "-500000000000",
+      "id": "balanced_tape",
+      "monitoring_convention": "strikefall/brownian-bridge-extrema/v1",
+      "risk_multiplier_cap": "8000000000000",
+      "step_ms": 250,
+      "test_fixtures": {
+        "boundary_steps": [
+          0,
+          60,
+          120,
+          180,
+          240
+        ],
+        "cumulative_variance": [
+          "0",
+          "1600000000",
+          "3200000000",
+          "4800000000",
+          "6400000000"
+        ],
+        "fixture_id": "balanced_tape_v2_variance_boundaries",
+        "normalization_sum_ppm": 1000000,
+        "replay_seed_label": "strikefall/deck-fixture/v1/balanced_tape/2"
+      },
+      "total_integrated_variance": "6400000000",
+      "variance_weights_ppm": [
+        250000,
+        250000,
+        250000,
+        250000
+      ],
+      "version": 2,
+      "visual": {
+        "art_theme": "electric_cyan",
+        "description": "Pressure stays even from the opening strike to the final second.",
+        "hue": 158,
+        "kicker": "No quiet quarter",
+        "tactical_hint": "Trust your spacing. The danger never fully leaves.",
+        "tempo": "1.00"
+      }
+    },
+    {
+      "allowed_initial_survival": {
+        "max": "900000000000",
+        "min": "120000000000",
+        "scale": "1000000000000"
+      },
+      "approach_steps": 60,
+      "audio": {
+        "profile": "rising_break"
+      },
+      "battle_steps": 240,
+      "calibration_digest": "8c71af116f2faada8fcbac9cad793d0cf1b199921db8c063613e2e05ab6ca3f1",
+      "calibration_evidence": {
+        "method": "cluster_nearest",
+        "selected_cluster_id": "cluster_01",
+        "source_calibration_digest": "f96678f938085b1b17a62318ef8332478f3b56eb5b78160d31cff71cb9651a15",
+        "target_distance_ppm_squared": "0"
+      },
+      "continuation_rule": {
+        "kind": "neutral"
+      },
+      "display_name": "Compression Break",
+      "drift_per_variance": "-500000000000",
+      "id": "compression_break",
+      "monitoring_convention": "strikefall/brownian-bridge-extrema/v1",
+      "risk_multiplier_cap": "8000000000000",
+      "step_ms": 250,
+      "test_fixtures": {
+        "boundary_steps": [
+          0,
+          60,
+          120,
+          180,
+          240
+        ],
+        "cumulative_variance": [
+          "0",
+          "320000000",
+          "960000000",
+          "2560000000",
+          "6400000000"
+        ],
+        "fixture_id": "compression_break_v2_variance_boundaries",
+        "normalization_sum_ppm": 1000000,
+        "replay_seed_label": "strikefall/deck-fixture/v1/compression_break/2"
+      },
+      "total_integrated_variance": "6400000000",
+      "variance_weights_ppm": [
+        50000,
+        100000,
+        250000,
+        600000
+      ],
+      "version": 2,
+      "visual": {
+        "art_theme": "violet_storm",
+        "description": "The line coils early, then unloads most of its force near the finish.",
+        "hue": 42,
+        "kicker": "Calm is a trap",
+        "tactical_hint": "A close flag looks clever until the last quarter arrives.",
+        "tempo": "0.88"
+      }
+    },
+    {
+      "allowed_initial_survival": {
+        "max": "900000000000",
+        "min": "120000000000",
+        "scale": "1000000000000"
+      },
+      "approach_steps": 60,
+      "audio": {
+        "profile": "front_loaded_impact"
+      },
+      "battle_steps": 240,
+      "calibration_digest": "05d5e245c0d5589806a8788382432dcaab6e87342595b8fb6e85e5324948d99d",
+      "calibration_evidence": {
+        "method": "cluster_nearest",
+        "selected_cluster_id": "cluster_04",
+        "source_calibration_digest": "f96678f938085b1b17a62318ef8332478f3b56eb5b78160d31cff71cb9651a15",
+        "target_distance_ppm_squared": "0"
+      },
+      "continuation_rule": {
+        "kind": "neutral"
+      },
+      "display_name": "Opening Rush",
+      "drift_per_variance": "-500000000000",
+      "id": "opening_rush",
+      "monitoring_convention": "strikefall/brownian-bridge-extrema/v1",
+      "risk_multiplier_cap": "8000000000000",
+      "step_ms": 250,
+      "test_fixtures": {
+        "boundary_steps": [
+          0,
+          60,
+          120,
+          180,
+          240
+        ],
+        "cumulative_variance": [
+          "0",
+          "3520000000",
+          "5120000000",
+          "6080000000",
+          "6400000000"
+        ],
+        "fixture_id": "opening_rush_v2_variance_boundaries",
+        "normalization_sum_ppm": 1000000,
+        "replay_seed_label": "strikefall/deck-fixture/v1/opening_rush/2"
+      },
+      "total_integrated_variance": "6400000000",
+      "variance_weights_ppm": [
+        550000,
+        250000,
+        150000,
+        50000
+      ],
+      "version": 2,
+      "visual": {
+        "art_theme": "solar_flare",
+        "description": "The first seconds hit hardest before the tape begins to cool.",
+        "hue": 12,
+        "kicker": "Brace on lock",
+        "tactical_hint": "Give the opening room. Greed works better after the first wave.",
+        "tempo": "1.16"
+      }
+    },
+    {
+      "allowed_initial_survival": {
+        "max": "900000000000",
+        "min": "120000000000",
+        "scale": "1000000000000"
+      },
+      "approach_steps": 60,
+      "audio": {
+        "profile": "double_drop"
+      },
+      "battle_steps": 240,
+      "calibration_digest": "3730911d763bf9b5ac4e64abd64ab47275e420c5bdad2fb11dd7bdbd71a01900",
+      "calibration_evidence": {
+        "method": "cluster_nearest",
+        "selected_cluster_id": "cluster_02",
+        "source_calibration_digest": "f96678f938085b1b17a62318ef8332478f3b56eb5b78160d31cff71cb9651a15",
+        "target_distance_ppm_squared": "0"
+      },
+      "continuation_rule": {
+        "kind": "neutral"
+      },
+      "display_name": "Pulse",
+      "drift_per_variance": "-500000000000",
+      "id": "pulse",
+      "monitoring_convention": "strikefall/brownian-bridge-extrema/v1",
+      "risk_multiplier_cap": "8000000000000",
+      "step_ms": 250,
+      "test_fixtures": {
+        "boundary_steps": [
+          0,
+          60,
+          120,
+          180,
+          240
+        ],
+        "cumulative_variance": [
+          "0",
+          "960000000",
+          "3200000000",
+          "4160000000",
+          "6400000000"
+        ],
+        "fixture_id": "pulse_v2_variance_boundaries",
+        "normalization_sum_ppm": 1000000,
+        "replay_seed_label": "strikefall/deck-fixture/v1/pulse/2"
+      },
+      "total_integrated_variance": "6400000000",
+      "variance_weights_ppm": [
+        150000,
+        350000,
+        150000,
+        350000
+      ],
+      "version": 2,
+      "visual": {
+        "art_theme": "magenta_pulse",
+        "description": "Alternating bursts create two distinct windows for cluster wipes.",
+        "hue": 282,
+        "kicker": "Two storms, one line",
+        "tactical_hint": "If the first burst misses, the second may finish the job.",
+        "tempo": "1.08"
+      }
+    }
+  ],
+  "model_assumptions": {
+    "continuation_disclosure": "neutral_at_launch",
+    "fresh_randomness_per_round": true,
+    "game_scale_variance_is_separate_from_source_magnitude": true,
+    "historical_role": "normalized_temporal_variance_shape_only",
+    "path_equation": "delta_x = drift_per_variance * delta_variance + sqrt(delta_variance) * standard_normal",
+    "pricing_payoff": "one_sided_no_touch_survival",
+    "stochastic_class": "geometric_diffusion_in_variance_time"
+  },
+  "privacy_contract": {
+    "exported_market_feature": "normalized_phase_variance_only",
+    "literal_historical_paths_exported": false,
+    "raw_values_exported": false,
+    "source_order_exported": false
+  },
+  "schema": "strikefall/deck-catalog/v1",
+  "source_provenance": [
+    {
+      "description": "Purpose-built deterministic regime-shape fixture; it contains no market observations.",
+      "input_sha256": "1e32450281101d5c6556b12f4d536f670d5b1002bf04f529e6755927415864fc",
+      "license": {
+        "identifier": "CC0-1.0",
+        "name": "CC0 1.0 Universal",
+        "reference": "local:tools/deck-calibrator/fixtures/NOTICE.md",
+        "terms_confirmed": true
+      },
+      "observation_count": 64,
+      "return_kind": "log_return",
+      "sampling_interval": "one synthetic model step",
+      "source_id": "strikefall_synthetic_shapes_v1",
+      "source_kind": "synthetic",
+      "usable_window_count": 4
+    }
+  ],
+  "tool": {
+    "name": "strikefall-deck-calibrator",
+    "version": "1.0.0"
+  },
+  "validation": {
+    "checks": {
+      "digest_integrity": true,
+      "privacy_boundary": true,
+      "simulation_campaign": true,
+      "structural_schema": true
+    },
+    "errors": [],
+    "ranked_promotion_ready": false,
+    "schema": "strikefall/deck-validation/v1",
+    "simulation_profile": {
+      "crowding_modelled": false,
+      "monitoring": "declared discrete deck steps",
+      "purpose": "offline shape and pacing guardrail, not production pricing",
+      "rounds_per_deck": 512
+    },
+    "simulations": {
+      "balanced_tape": {
+        "contenders": 20,
+        "elimination_timing": {
+          "first_10s_mass_wipe_rate_ppm": 800781,
+          "median_fraction_ppm": 112500,
+          "median_step": 27
+        },
+        "flag_profile": "symmetric_nested_risk_concentrated_reference_ladder",
+        "mean_realized_variance_ratio": 1.000716,
+        "observed_phase_variance_ppm": [
+          250943,
+          251632,
+          248685,
+          248740
+        ],
+        "phase_share_max_abs_error_ppm": 1632,
+        "reference_ladder_monotone": true,
+        "reference_ladder_survival_ppm": [
+          150391,
+          162109,
+          180664,
+          199219,
+          220703,
+          241211,
+          257812,
+          275391,
+          292969,
+          311523
+        ],
+        "rounds": 512,
+        "score": {
+          "lobby_points_stddev": 2007.691,
+          "mean_lobby_points": 1991.731
+        },
+        "seed_algorithm": "sha256_seeded_xorshift64star_box_muller_v1",
+        "survivors": {
+          "distinct_counts": 11,
+          "median": 4,
+          "p10": 0,
+          "p90": 10
+        }
+      },
+      "compression_break": {
+        "contenders": 20,
+        "elimination_timing": {
+          "first_10s_mass_wipe_rate_ppm": 105469,
+          "median_fraction_ppm": 383333,
+          "median_step": 92
+        },
+        "flag_profile": "symmetric_nested_risk_concentrated_reference_ladder",
+        "mean_realized_variance_ratio": 0.999864,
+        "observed_phase_variance_ppm": [
+          49100,
+          99929,
+          250438,
+          600532
+        ],
+        "phase_share_max_abs_error_ppm": 900,
+        "reference_ladder_monotone": true,
+        "reference_ladder_survival_ppm": [
+          163086,
+          181641,
+          204102,
+          224609,
+          237305,
+          257812,
+          275391,
+          294922,
+          319336,
+          338867
+        ],
+        "rounds": 512,
+        "score": {
+          "lobby_points_stddev": 2017.976,
+          "mean_lobby_points": 2176.23
+        },
+        "seed_algorithm": "sha256_seeded_xorshift64star_box_muller_v1",
+        "survivors": {
+          "distinct_counts": 12,
+          "median": 5,
+          "p10": 0,
+          "p90": 10
+        }
+      },
+      "opening_rush": {
+        "contenders": 20,
+        "elimination_timing": {
+          "first_10s_mass_wipe_rate_ppm": 972656,
+          "median_fraction_ppm": 58333,
+          "median_step": 14
+        },
+        "flag_profile": "symmetric_nested_risk_concentrated_reference_ladder",
+        "mean_realized_variance_ratio": 1.004021,
+        "observed_phase_variance_ppm": [
+          550730,
+          249519,
+          149635,
+          50116
+        ],
+        "phase_share_max_abs_error_ppm": 730,
+        "reference_ladder_monotone": true,
+        "reference_ladder_survival_ppm": [
+          177734,
+          200195,
+          219727,
+          246094,
+          255859,
+          274414,
+          292969,
+          318359,
+          332031,
+          351562
+        ],
+        "rounds": 512,
+        "score": {
+          "lobby_points_stddev": 2018.407,
+          "mean_lobby_points": 2336.591
+        },
+        "seed_algorithm": "sha256_seeded_xorshift64star_box_muller_v1",
+        "survivors": {
+          "distinct_counts": 11,
+          "median": 6,
+          "p10": 0,
+          "p90": 10
+        }
+      },
+      "pulse": {
+        "contenders": 20,
+        "elimination_timing": {
+          "first_10s_mass_wipe_rate_ppm": 527344,
+          "median_fraction_ppm": 179167,
+          "median_step": 43
+        },
+        "flag_profile": "symmetric_nested_risk_concentrated_reference_ladder",
+        "mean_realized_variance_ratio": 1.005721,
+        "observed_phase_variance_ppm": [
+          148355,
+          351309,
+          149036,
+          351300
+        ],
+        "phase_share_max_abs_error_ppm": 1645,
+        "reference_ladder_monotone": true,
+        "reference_ladder_survival_ppm": [
+          159180,
+          183594,
+          199219,
+          221680,
+          236328,
+          255859,
+          283203,
+          305664,
+          317383,
+          342773
+        ],
+        "rounds": 512,
+        "score": {
+          "lobby_points_stddev": 1997.578,
+          "mean_lobby_points": 2176.366
+        },
+        "seed_algorithm": "sha256_seeded_xorshift64star_box_muller_v1",
+        "survivors": {
+          "distinct_counts": 11,
+          "median": 5,
+          "p10": 0,
+          "p90": 10
+        }
+      }
+    },
+    "valid": true,
+    "warnings": [
+      "synthetic calibration provenance is test-only; replace it with reviewed licensed data before ranked promotion",
+      "balanced_tape: unpaced reference first-10s mass-wipe rate is 800781 ppm; run the engine-level pacing campaign",
+      "compression_break: unpaced reference first-10s mass-wipe rate is 105469 ppm; run the engine-level pacing campaign",
+      "opening_rush: unpaced reference first-10s mass-wipe rate is 972656 ppm; run the engine-level pacing campaign",
+      "pulse: unpaced reference first-10s mass-wipe rate is 527344 ppm; run the engine-level pacing campaign"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+[package]
+name = "replay-inspector"
+description = "Standalone deterministic Strikefall replay auditor"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish = false
+
+[dependencies]
+clap.workspace = true
+serde_json.workspace = true
+strikefall-protocol = { path = "../../crates/strikefall-protocol" }
+thiserror.workspace = true
+
+[lints]
+workspace = true

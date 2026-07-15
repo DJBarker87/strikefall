@@ -1,0 +1,36 @@
+{
+  "corpora": {
+    "adversarial": {
+      "bytes": 1177259,
+      "csv_sha256": "6d3f85b95bc8841240ef4ccfe63374342d077ba2a213aeb50ec2f322f87c83cb",
+      "path": "tools/model-validation/no_touch_adversarial.csv",
+      "rows": 10000,
+      "seed_hex": "0x4144564552534152"
+    },
+    "production": {
+      "bytes": 11471026,
+      "csv_sha256": "264196aa95fd785677ad9c769505f2e1215cf8a0dd310562dcc1a48cb1574a43",
+      "path": "tools/model-validation/no_touch_production.csv",
+      "rows": 100000,
+      "seed_hex": "0x535452494b454641"
+    }
+  },
+  "fixed_point_scale": "1000000000000",
+  "formula": "continuous_one_sided_first_passage_constant_drift_variance_time",
+  "generator_sha256": "7c832cb2aae952e85bf795c86034d26a357b4f64a291815b488c99abadfbb5be",
+  "generator_version": "strikefall-first-passage-corpora-v1",
+  "max_absolute_error": {
+    "adversarial": {
+      "probability": "0.000001",
+      "scaled": 1000000
+    },
+    "production": {
+      "probability": "0.0000002",
+      "scaled": 200000
+    }
+  },
+  "mpmath_decimal_digits": 80,
+  "requirements_sha256": "a699f46ed76bd216f1081b6b2330e4fb45d7c8c5a5354b208694d6590a5a8645",
+  "rounding": "nearest_integer_half_up_at_public_scale",
+  "schema": "strikefall/model-validation-manifest/v1"
+}

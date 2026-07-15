@@ -1,0 +1,104 @@
+services:
+  postgres:
+    image: postgres:17-alpine@sha256:742f40ea20b9ff2ff31db5458d127452988a2164df9e17441e191f3b72252193
+    environment:
+      POSTGRES_DB: strikefall
+      POSTGRES_USER: strikefall
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD to a long random value}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U strikefall -d strikefall"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+    volumes:
+      - strikefall-postgres:/var/lib/postgresql/data
+    networks:
+      - private
+
+  round-service:
+    image: strikefall-round-service:${STRIKEFALL_IMAGE_TAG:-latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        STRIKEFALL_BUILD_REVISION: ${STRIKEFALL_BUILD_REVISION:-unbound}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - STRIKEFALL_ENV=production
+      - STRIKEFALL_REPOSITORY=postgres
+      - DATABASE_URL=postgres://strikefall:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD to a long random value}@postgres:5432/strikefall
+      - STRIKEFALL_SIGNING_KEY=${STRIKEFALL_SIGNING_KEY:?set STRIKEFALL_SIGNING_KEY to 64 hexadecimal characters}
+      - STRIKEFALL_ALLOWED_ORIGIN=${STRIKEFALL_ALLOWED_ORIGIN:-http://localhost:4173}
+      - STRIKEFALL_RUN_MIGRATIONS=true
+      - STRIKEFALL_TRUST_PROXY=true
+      # The service deliberately refuses production startup without this
+      # declaration. Live SSE fan-out is process-local until a cross-instance
+      # pub/sub transport is implemented.
+      - STRIKEFALL_STREAM_TOPOLOGY=single-replica
+      - STRIKEFALL_REQUIRE_INVITE=${STRIKEFALL_REQUIRE_INVITE:-false}
+      - STRIKEFALL_SESSION_TTL_HOURS=${STRIKEFALL_SESSION_TTL_HOURS:-168}
+      - STRIKEFALL_TELEMETRY_RETENTION_DAYS=${STRIKEFALL_TELEMETRY_RETENTION_DAYS:-30}
+      - RUST_LOG=${RUST_LOG:-strikefall_round_service=info,tower_http=info}
+      # Pass-through values are omitted when absent. In particular, never send
+      # an empty invite-code variable: invite-required startup rejects it.
+      - STRIKEFALL_INVITE_CODES
+      - STRIKEFALL_METRICS_TOKEN
+      - STRIKEFALL_EXPERIMENTS_JSON
+      - STRIKEFALL_RECOVERY_CONCURRENCY
+    init: true
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,mode=1777
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    restart: unless-stopped
+    deploy:
+      replicas: 1
+    stop_grace_period: 15s
+    expose:
+      - "3001"
+    networks:
+      - private
+      - public
+
+  web:
+    image: strikefall-web:${STRIKEFALL_IMAGE_TAG:-latest}
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+      args:
+        STRIKEFALL_BUILD_REVISION: ${STRIKEFALL_BUILD_REVISION:-unbound}
+        VITE_ROUND_API_URL: /api
+        VITE_STRIKEFALL_DECK_STRUCTURE_EXPERIMENT: ${VITE_STRIKEFALL_DECK_STRUCTURE_EXPERIMENT:-}
+    depends_on:
+      round-service:
+        condition: service_healthy
+    environment:
+      STRIKEFALL_EDGE_TRUSTED_PROXY_CIDR: ${STRIKEFALL_EDGE_TRUSTED_PROXY_CIDR:-127.0.0.1/32}
+    init: true
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,nodev,size=32m,mode=1777
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    restart: unless-stopped
+    stop_grace_period: 10s
+    ports:
+      - "${STRIKEFALL_WEB_BIND:-127.0.0.1}:${STRIKEFALL_WEB_PORT:-4173}:8080"
+    networks:
+      - public
+
+volumes:
+  strikefall-postgres:
+
+networks:
+  private:
+    internal: true
+  public:

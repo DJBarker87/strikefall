@@ -1,0 +1,20 @@
+[package]
+name = "strikefall-wasm"
+description = "Precision-safe WebAssembly boundary for the Strikefall deterministic core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+serde = { workspace = true, features = ["std"] }
+serde_json.workspace = true
+strikefall-core = { path = "../strikefall-core", features = ["serde"] }
+strikefall-protocol = { path = "../strikefall-protocol" }
+wasm-bindgen = "=0.2.100"
+
+[lints]
+workspace = true

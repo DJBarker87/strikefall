@@ -1,0 +1,131 @@
+{
+  "catalog_version": 3,
+  "common": {
+    "allowed_initial_survival": {
+      "max": "970000000000",
+      "min": "120000000000",
+      "scale": "1000000000000"
+    },
+    "approach_steps": 60,
+    "battle_steps": 240,
+    "continuation_rule": {
+      "kind": "neutral"
+    },
+    "drift_per_variance": "-500000000000",
+    "monitoring_convention": "strikefall/brownian-bridge-extrema/v1",
+    "risk_multiplier_cap": "8000000000000",
+    "step_ms": 250,
+    "total_integrated_variance": "6400000000"
+  },
+  "decks": [
+    {
+      "audio": {
+        "profile": "steady_pressure"
+      },
+      "display_name": "Balanced Tape",
+      "id": "balanced_tape",
+      "opening_runway": {
+        "steps": 40,
+        "variance_share_bps": 340
+      },
+      "shape": {
+        "mode": "cluster_nearest",
+        "target_weights_ppm": [250000, 250000, 250000, 250000]
+      },
+      "version": 3,
+      "visual": {
+        "art_theme": "electric_cyan",
+        "description": "Pressure stays even from the opening strike to the final second.",
+        "hue": 158,
+        "kicker": "No quiet quarter",
+        "tactical_hint": "Trust your spacing. The danger never fully leaves.",
+        "tempo": "1.00"
+      }
+    },
+    {
+      "audio": {
+        "profile": "rising_break"
+      },
+      "display_name": "Compression Break",
+      "id": "compression_break",
+      "opening_runway": {
+        "steps": 40,
+        "variance_share_bps": 1600
+      },
+      "shape": {
+        "mode": "cluster_nearest",
+        "target_weights_ppm": [50000, 100000, 250000, 600000]
+      },
+      "version": 3,
+      "visual": {
+        "art_theme": "violet_storm",
+        "description": "The line coils early, then unloads most of its force near the finish.",
+        "hue": 42,
+        "kicker": "Calm is a trap",
+        "tactical_hint": "A close flag looks clever until the last quarter arrives.",
+        "tempo": "0.88"
+      }
+    },
+    {
+      "audio": {
+        "profile": "front_loaded_impact"
+      },
+      "display_name": "Opening Rush",
+      "id": "opening_rush",
+      "opening_runway": {
+        "steps": 40,
+        "variance_share_bps": 125
+      },
+      "shape": {
+        "mode": "cluster_nearest",
+        "target_weights_ppm": [550000, 250000, 150000, 50000]
+      },
+      "version": 3,
+      "visual": {
+        "art_theme": "solar_flare",
+        "description": "The first seconds hit hardest before the tape begins to cool.",
+        "hue": 12,
+        "kicker": "Brace on lock",
+        "tactical_hint": "Give the opening room. Greed works better after the first wave.",
+        "tempo": "1.16"
+      }
+    },
+    {
+      "audio": {
+        "profile": "double_drop"
+      },
+      "display_name": "Pulse",
+      "id": "pulse",
+      "opening_runway": {
+        "steps": 40,
+        "variance_share_bps": 450
+      },
+      "shape": {
+        "mode": "cluster_nearest",
+        "target_weights_ppm": [150000, 350000, 150000, 350000]
+      },
+      "version": 3,
+      "visual": {
+        "art_theme": "magenta_pulse",
+        "description": "Alternating bursts create two distinct windows for cluster wipes.",
+        "hue": 282,
+        "kicker": "Two storms, one line",
+        "tactical_hint": "If the first burst misses, the second may finish the job.",
+        "tempo": "1.08"
+      }
+    }
+  ],
+  "minimum_pairwise_shape_distance_ppm": 100000,
+  "model_assumptions": {
+    "continuation_disclosure": "neutral_at_launch",
+    "fresh_randomness_per_round": true,
+    "game_scale_variance_is_separate_from_source_magnitude": true,
+    "historical_role": "normalized_temporal_variance_shape_only",
+    "path_equation": "delta_x = drift_per_variance * delta_variance + sqrt(delta_variance) * standard_normal",
+    "pricing_payoff": "one_sided_no_touch_survival",
+    "stochastic_class": "geometric_diffusion_in_variance_time"
+  },
+  "require_equal_total_variance": true,
+  "schema": "strikefall/deck-template/v1",
+  "unique_cluster_selection": true
+}

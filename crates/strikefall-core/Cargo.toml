@@ -1,0 +1,18 @@
+[package]
+name = "strikefall-core"
+description = "Deterministic deck, path, no-touch, hit, and scoring rules for Strikefall"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[features]
+default = []
+serde = ["dep:serde"]
+
+[dependencies]
+serde = { workspace = true, optional = true, features = ["alloc"] }
+solmath.workspace = true
+
+[lints]
+workspace = true

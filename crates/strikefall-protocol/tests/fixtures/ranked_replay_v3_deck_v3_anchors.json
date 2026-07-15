@@ -1,0 +1,73 @@
+{
+  "commitment": "554e7fec7a7db7407de6ff4e5031718a00b57b056b22a751917fa61abd031258",
+  "deckDigest": "4d9550ec01c4226ee1e0f89934c7147a245082569b619a58ec546c72a66e214e",
+  "deckVersion": 3,
+  "eventCount": 438,
+  "experimentAssignments": {
+    "escape:v2": "midpoint",
+    "risk-display:v2": "danger-band"
+  },
+  "firstEvent": {
+    "digest": "b4a94c7db390e48d5be833a53bc462bdbfd0c166a78bd25c9709b654450e3993",
+    "kind": {
+      "data": {
+        "commitment": "554e7fec7a7db7407de6ff4e5031718a00b57b056b22a751917fa61abd031258",
+        "experimentAssignments": {
+          "escape:v2": "midpoint",
+          "risk-display:v2": "danger-band"
+        },
+        "playerPlacement": {
+          "barrier": "112541717465399",
+          "contenderId": 0,
+          "isBot": false,
+          "name": "YOU",
+          "persona": null,
+          "side": "upper"
+        },
+        "protocolVersion": "strikefall/ranked-replay/v3"
+      },
+      "type": "round_created"
+    },
+    "previousDigest": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sequence": 0,
+    "serverTimeMs": 1700000000000,
+    "signature": "4236c8aa7b4be0a87b4af873aab8d3278308f2310fafd881f2e715b3b4861ea07054740f1f237157eaa9633e95b6f754f97a8608a06fb4f7d2beff163cd96401"
+  },
+  "lastEvent": {
+    "digest": "accbf35a5683043b0e473d66af45df601b84600739331a63c395ae3a52b3ea0b",
+    "kind": {
+      "data": {
+        "proofDigest": "14a0ea6fdda401589b01bd64a6bb5345eee091d50b8ac7419229ed92af29ac32",
+        "verifierVersion": "cross-language-fixture/1"
+      },
+      "type": "replay_verified"
+    },
+    "previousDigest": "4fb30e36abe10e23f97f2769596492d6f5198e030101783e64f5026556324bf0",
+    "sequence": 437,
+    "serverTimeMs": 1700000094000,
+    "signature": "1a02169ac6c06447bc1de20a19e019b5b6800dcb32ac1030ccd793a8918d1edc9ea2abc70407c40c4563df8bb5df2044b52119fa15bb22eea61fda7392d32d0d"
+  },
+  "lockedScoresDigest": "5fcade3810baac7692b07437f6be49a40195b828310041a8891a6fbeeb89a417",
+  "openingRunway": {
+    "steps": 40,
+    "varianceShareBps": 450
+  },
+  "pathDigest": "fed43bce08568ccc7cb84b959185eefa01efed0da643c912e99ea0bc48aaa13d",
+  "protocolVersion": "strikefall/ranked-replay/v3",
+  "resultProofDigest": "14a0ea6fdda401589b01bd64a6bb5345eee091d50b8ac7419229ed92af29ac32",
+  "roundEndedEvent": {
+    "digest": "063cfd9bd36cc54c1e9a805eed98ba0efafd3c786bd691d9af603fe3d68fd88b",
+    "kind": {
+      "data": {
+        "proofDigest": "14a0ea6fdda401589b01bd64a6bb5345eee091d50b8ac7419229ed92af29ac32"
+      },
+      "type": "round_ended"
+    },
+    "previousDigest": "6664a6a0ee52f5bb1482aa3d8670c5f65be92d4ea3530492ea5cd7813a651433",
+    "sequence": 435,
+    "serverTimeMs": 1700000094000,
+    "signature": "4ed863ee641baa85996a17e980a8eba5e9b2524c3a307b67b7fbb14369e05918da2767faac704773cc606981a7d4092582ee87060268dc1f2a8856f17f71050d"
+  },
+  "roundId": "94925e40-3fd0-4cbe-8a21-5c3295e2e715",
+  "serverVerifyingKey": "197f6b23e16c8532c6abc838facd5ea789be0c76b2920334039bfa8b3d368d61"
+}

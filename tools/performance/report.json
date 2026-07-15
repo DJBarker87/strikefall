@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "authoritative-round-create",
+  "generatedAt": "2026-07-15T07:39:35.346Z",
+  "endpoint": "http://127.0.0.1:4173/api/v1/solo-rounds",
+  "sampleCount": 25,
+  "warmupCount": 3,
+  "sessionCount": 4,
+  "targetMs": 300,
+  "validation": {
+    "commitment": true,
+    "approach": true,
+    "roundIdentity": true,
+    "botRoster": 19
+  },
+  "provenance": {
+    "source": {
+      "schemaVersion": 1,
+      "algorithm": "sha256",
+      "roots": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "Dockerfile",
+        "Dockerfile.web",
+        "apps/round-service/Cargo.toml",
+        "apps/round-service/src",
+        "crates/strikefall-core/Cargo.toml",
+        "crates/strikefall-core/src",
+        "crates/strikefall-protocol/Cargo.toml",
+        "crates/strikefall-protocol/src",
+        "deploy/nginx",
+        "docker-compose.yml",
+        "migrations",
+        "rust-toolchain.toml",
+        "tools/evidence/provenance.mjs",
+        "tools/performance/check-report.mjs",
+        "tools/performance/evidence.mjs",
+        "tools/performance/round-create.mjs"
+      ],
+      "fileCount": 45,
+      "treeSha256": "68f7d5c47653b4e9b4c5f2c3fc82cdb2e6b60214812d5761ddd95be128b7c718",
+      "files": {
+        "Cargo.lock": {
+          "bytes": 59918,
+          "sha256": "762631031cdbff2cc5d4c6058adb8450c406dcf8046cfd0e3512b2fc016bbd02"
+        },
+        "Cargo.toml": {
+          "bytes": 1846,
+          "sha256": "101e6c0f257c6ab50efe90caa260fbe4dccc3974aa05d4a890af69143707af52"
+        },
+        "Dockerfile": {
+          "bytes": 1801,
+          "sha256": "1b1e800379acbf590a78c30767f5558f4f215db1315c6380615209002f9be4c5"
+        },
+        "Dockerfile.web": {
+          "bytes": 2205,
+          "sha256": "a5dc1fba386c3ec714c7d6bf9eebf6d5a8c0dcc7ecb893c7f9a602b9dbd50e15"
+        },
+        "apps/round-service/Cargo.toml": {
+          "bytes": 982,
+          "sha256": "5e7378058830f1e11d9fdcb6eabb45329194df2b8fba014ece10bbfdec53bcb1"
+        },
+        "apps/round-service/src/alpha.rs": {
+          "bytes": 67794,
+          "sha256": "a3efb880ed28f63904a350225ed18b3b108d73c63df9723a306ea2f08124431f"
+        },
+        "apps/round-service/src/alpha_repository.rs": {
+          "bytes": 55319,
+          "sha256": "da7d9b8d5a71167980a89c094074c61a78fa67b317d179346e3afafce8459b38"
+        },
+        "apps/round-service/src/api.rs": {
+          "bytes": 13587,
+          "sha256": "8f0266116343827c764eecb9be1b20edbd459a8b9af1542c2b1eadf764da6648"
+        },
+        "apps/round-service/src/clock.rs": {
+          "bytes": 1004,
+          "sha256": "d56e5a97fdf16e0b2273d8c9b8e98917f9718565165767549daeea033cf6f0e6"
+        },
+        "apps/round-service/src/error.rs": {
+          "bytes": 4078,
+          "sha256": "4241741a332b98a6defb95493ac1f6017fb010fd19e19ed682eec0d5aa980247"
+        },
+        "apps/round-service/src/lib.rs": {
+          "bytes": 1527,
+          "sha256": "e27b3514ae653421726a652a3efe0dc2bd0446e7977abc74da97fe34c73cc8a5"
+        },
+        "apps/round-service/src/main.rs": {
+          "bytes": 2885,
+          "sha256": "49eb1b579728aff3e31ad6d3c9facc0e7a5dac85c517b2db5397cc6b8e21b1c6"
+        },
+        "apps/round-service/src/model.rs": {
+          "bytes": 4382,
+          "sha256": "8109ac8cb4b72dd8642aa7799de9e049d249315aad4f878d067f8feea6879a01"
+        },
+        "apps/round-service/src/repository.rs": {
+          "bytes": 19648,
+          "sha256": "87c7e9882afb825ef26382aaa1c09b1a89cc9eb2bf3ba79c0703b44cb8956418"
+        },
+        "apps/round-service/src/runtime.rs": {
+          "bytes": 23165,
+          "sha256": "dde4bc737d3e053a17941e48f0621b0f1f58a5ad0415039c2bd6db55f49b7ed1"
+        },
+        "apps/round-service/src/service.rs": {
+          "bytes": 54966,
+          "sha256": "b75b83839e45c96ee2e8db9113b30f53bbabef443a36e44f3390d53196c40528"
+        },
+        "crates/strikefall-core/Cargo.toml": {
+          "bytes": 412,
+          "sha256": "fb60b71516708e09d09aaad3ccd013ffc38642188e103fa14cfd13c8a5a92c3c"
+        },
+        "crates/strikefall-core/src/deck.rs": {
+          "bytes": 20969,
+          "sha256": "4ce38f2140f3076e045a1440efc84738449711b711e820c6cb6529912176053e"
+        },
+        "crates/strikefall-core/src/error.rs": {
+          "bytes": 1445,
+          "sha256": "bf3ea8e9985bca195ecbc3486999895e94c415f4300416f14b039ff5a7d9394f"
+        },
+        "crates/strikefall-core/src/hit.rs": {
+          "bytes": 4411,
+          "sha256": "4ddef3979d4e44d06b620c24f5a5ee72dce2077aaea67d755f52b6f85a3a549c"
+        },
+        "crates/strikefall-core/src/lib.rs": {
+          "bytes": 1337,
+          "sha256": "141f9588adfa8a1215832f58dcc4c8de41b49f7a4947ef032866c6b523fdc1db"
+        },
+        "crates/strikefall-core/src/no_touch.rs": {
+          "bytes": 12429,
+          "sha256": "f7aa314f367ad220cbe6c239980768dadb71a042eb039ea8f7cf65ff189aab7d"
+        },
+        "crates/strikefall-core/src/path.rs": {
+          "bytes": 13411,
+          "sha256": "1cbec39f15ea74054ec85f76d4e535db0420db57018c48a34b8c749f9d5e53b6"
+        },
+        "crates/strikefall-core/src/rng.rs": {
+          "bytes": 1934,
+          "sha256": "6c53c9b82d3372cd92cbbfe17c811520ed47e8214d9c2e2e541b1bcab45790f1"
+        },
+        "crates/strikefall-core/src/scoring.rs": {
+          "bytes": 9435,
+          "sha256": "0670cfdd87f684256b0f96c0ec2bd403dca106e84bb923a8b159f550d9339863"
+        },
+        "crates/strikefall-protocol/Cargo.toml": {
+          "bytes": 496,
+          "sha256": "ec6f6d6a568297971bc8c7701fb3207a25cb21cc5887585618be8ea2477a25f8"
+        },
+        "crates/strikefall-protocol/src/crypto.rs": {
+          "bytes": 7472,
+          "sha256": "c0ff09a3bd9dd5c867de7525213b47dbf99031d3946635d6346331f1fdad19f0"
+        },
+        "crates/strikefall-protocol/src/engine.rs": {
+          "bytes": 43335,
+          "sha256": "ec5f9ea3564be6ae76de1a848725d77632465876d04e321ba34dacc6ce8cd5e5"
+        },
+        "crates/strikefall-protocol/src/error.rs": {
+          "bytes": 841,
+          "sha256": "02de6a7190a769ecbcee09b2a178033e02c43b412b1d21e3247d3a8509983245"
+        },
+        "crates/strikefall-protocol/src/experiments.rs": {
+          "bytes": 2905,
+          "sha256": "3ee924dfe625272e7cc1cf05d6b8a6254cc45a3a11e9acda68dc67e03681f1c4"
+        },
+        "crates/strikefall-protocol/src/lib.rs": {
+          "bytes": 2261,
+          "sha256": "842b8b4bef066533298bef9c79285cf2a8617e34625baa296ce8152f820bcbc7"
+        },
+        "crates/strikefall-protocol/src/types.rs": {
+          "bytes": 12962,
+          "sha256": "5884e21d3c4eab909caa193b7a7fec128bc09f3d748532b848efdd458bfdf21d"
+        },
+        "crates/strikefall-protocol/src/verify.rs": {
+          "bytes": 28707,
+          "sha256": "ab4a0df742f657db99b0501c5789bf45cf820635ce7aefb3774220ad0c81a9d8"
+        },
+        "deploy/nginx/nginx.conf": {
+          "bytes": 803,
+          "sha256": "26254f52a60b0b3a9b02c6f3b49108467ff9bc3cebef54ab48a91975a5ad7fd8"
+        },
+        "deploy/nginx/strikefall.conf.template": {
+          "bytes": 3710,
+          "sha256": "36d6fa029631acabaa674e7e393626fc5239a1c7cff6674b6a5e67b19201af3d"
+        },
+        "docker-compose.yml": {
+          "bytes": 3468,
+          "sha256": "d5235e2fbd03cfcd715812356d5b6b6a02f18358a3ca000aa473372e929b2085"
+        },
+        "migrations/202607140001_create_strikefall_rounds.sql": {
+          "bytes": 2243,
+          "sha256": "a9ba3494a449594bb4413b198f5e904fde1ea487819c524e65a4f27830c799f8"
+        },
+        "migrations/202607150001_closed_alpha_identity_metrics.sql": {
+          "bytes": 4397,
+          "sha256": "f94fb239c9e4482371d0676b02b28e91ad083111a769219c55c7844b62ad789b"
+        },
+        "migrations/202607150002_telemetry_semantic_idempotency.sql": {
+          "bytes": 327,
+          "sha256": "199bc021324fc991a742d8733c7378a7a006c28b72a48c3eecee3863a66163d4"
+        },
+        "migrations/202607150003_telemetry_v2_product_events.sql": {
+          "bytes": 932,
+          "sha256": "8246e374631a452be5fd9372f11ebd9b39f2ba8efa9eac8460ee67b40c3edbe1"
+        },
+        "rust-toolchain.toml": {
+          "bytes": 113,
+          "sha256": "e9f0cde5a15d5e30e8489bea30f4085c909c8eed57d699d335a14d2d23aad154"
+        },
+        "tools/evidence/provenance.mjs": {
+          "bytes": 5136,
+          "sha256": "5f543c11f4e8529b88761266a9084d67c1a52fe66eac1a0c7162e5e4b8b599e2"
+        },
+        "tools/performance/check-report.mjs": {
+          "bytes": 1591,
+          "sha256": "aeb312f8ad685b5ad41729577b44d3b601975e11b786e2fca311c0b6d9dfff00"
+        },
+        "tools/performance/evidence.mjs": {
+          "bytes": 4596,
+          "sha256": "c309867ef818b7bfc7f94926f0b5aa26f5ba23d388e3b08737c11ae8681f83de"
+        },
+        "tools/performance/round-create.mjs": {
+          "bytes": 7237,
+          "sha256": "86532cfabc663ab713237ec26d71668aed7ea917dc50ca92a328be598317708f"
+        }
+      }
+    },
+    "git": {
+      "commit": null,
+      "worktree": "dirty",
+      "statusSha256": "08b6ab8ce610baa78f4852dcdd610991bfee6d6e2e7677c1f69b197b29cd9cfe"
+    },
+    "releaseBound": false
+  },
+  "environment": {
+    "runner": {
+      "node": "v23.1.0",
+      "platform": "darwin",
+      "architecture": "arm64",
+      "kernelRelease": "25.5.0"
+    },
+    "docker": {
+      "engineVersion": "29.1.3",
+      "composeVersion": "5.0.0-desktop.1"
+    },
+    "containers": [
+      {
+        "service": "postgres",
+        "containerId": "0b91943b0cd5708a38d90cfe006ec7d518609577be184eb3fc1136aed173dcd5",
+        "imageId": "sha256:742f40ea20b9ff2ff31db5458d127452988a2164df9e17441e191f3b72252193",
+        "imageReference": "postgres:17-alpine@sha256:742f40ea20b9ff2ff31db5458d127452988a2164df9e17441e191f3b72252193",
+        "status": "running",
+        "health": "healthy",
+        "startedAt": "2026-07-15T07:39:16.060993841Z",
+        "buildRevision": null
+      },
+      {
+        "service": "round-service",
+        "containerId": "0c7a31f9fb428d2e5d51ae9afd7214896fadf611a1e42db7cd61c4159a601953",
+        "imageId": "sha256:beb9e1cb822b9b0c82d3900e0796dee9beb60afc438913113c46d4aa63d8e30b",
+        "imageReference": "strikefall-round-service:latest",
+        "status": "running",
+        "health": "healthy",
+        "startedAt": "2026-07-15T07:39:21.701743719Z",
+        "buildRevision": "unbound"
+      },
+      {
+        "service": "web",
+        "containerId": "e98990265ed3af5e5d0be1ac19daf76021a7fc0666d209ceb2c03341feed4d25",
+        "imageId": "sha256:1e46939141292c3c585f912324f6d67a3aa9f166b00147b191aa7820eec5d286",
+        "imageReference": "strikefall-web:latest",
+        "status": "running",
+        "health": "healthy",
+        "startedAt": "2026-07-15T07:39:27.296395263Z",
+        "buildRevision": "unbound"
+      }
+    ]
+  },
+  "raw": {
+    "warmupsMs": [
+      8.222,
+      7.7,
+      7.823
+    ],
+    "samplesMs": [
+      7.08,
+      7.664,
+      6.92,
+      6.222,
+      6.426,
+      7.842,
+      6.522,
+      6.723,
+      6.182,
+      6.624,
+      6.328,
+      8.215,
+      6.348,
+      7.98,
+      7.593,
+      6.112,
+      6.55,
+      6.398,
+      6.018,
+      7.605,
+      7.062,
+      6.07,
+      6.079,
+      5.504,
+      6.416
+    ]
+  },
+  "summary": {
+    "minMs": 5.5,
+    "p50Ms": 6.52,
+    "p95Ms": 7.98,
+    "p99Ms": 8.21,
+    "maxMs": 8.21
+  },
+  "passed": true
+}

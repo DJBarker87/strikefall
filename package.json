@@ -1,0 +1,52 @@
+{
+  "name": "strikefall",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "vitest run src",
+    "test:watch": "vitest src",
+    "test:e2e": "playwright test",
+    "test:e2e:a11y": "VITE_ROUND_API_URL=/api playwright test e2e/accessibility.spec.ts",
+    "test:e2e:ranked": "STRIKEFALL_E2E_RANKED=1 playwright test e2e/ranked-alpha.spec.ts --project=desktop-1280",
+    "test:e2e:ranked-daily": "STRIKEFALL_E2E_RANKED=1 playwright test e2e/ranked-daily.spec.ts --project=desktop-1280",
+    "test:performance:ranked-mobile": "STRIKEFALL_E2E_RANKED=1 playwright test e2e/ranked-mobile-performance.spec.ts --project=ranked-mobile-network",
+    "test:qa": "playwright test --config playwright.qa.config.ts",
+    "test:qa:smoke": "STRIKEFALL_QA_REPORT=./e2e/qa/report-smoke playwright test --config playwright.qa.config.ts --project chromium-resilience",
+    "test:qa:soak": "STRIKEFALL_QA_REPORT=./e2e/qa/report-soak playwright test --config playwright.qa.config.ts --project chromium-soak",
+    "test:qa:webkit": "STRIKEFALL_QA_WEBKIT=1 STRIKEFALL_QA_REPORT=./e2e/qa/report-webkit playwright test --config playwright.qa.config.ts --project webkit-resilience",
+    "test:qa:performance": "STRIKEFALL_QA_REPORT=./e2e/qa/report-performance playwright test --config playwright.qa.config.ts --project chromium-performance",
+    "test:performance:api": "node tools/performance/round-create.mjs",
+    "test:performance:report": "node tools/performance/check-report.mjs",
+    "test:deployment:topology": "node tools/deployment/check-topology.mjs",
+    "test:evidence": "node --test tools/evidence/provenance.test.mjs tools/performance/evidence.test.mjs tools/sbf-benchmark/evidence.test.mjs",
+    "test:sbf": "NO_DNA=1 ./tools/sbf-benchmark/run.sh",
+    "test:sbf:report": "node tools/sbf-benchmark/check-report.mjs",
+    "test:model": "python3 tools/model-validation/reference.py --check --check-corpora && cargo run -p strikefall-model-validator --release --locked -- --json && python3 tools/model-validation/reference.py --bridge-samples 100000 && python3 tools/model-validation/bridge_extrema.py --samples 100000",
+    "model:corpora:update": "python3 tools/model-validation/reference.py --write-corpora",
+    "report:model": "python3 tools/model-validation/reference.py --check-corpora --manifest-report && cargo run -p strikefall-model-validator --release --locked -- --json",
+    "test:decks": "cd tools/deck-calibrator && PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v",
+    "wasm:build": "./scripts/build-wasm.sh",
+    "test:wasm": "./scripts/check-wasm.sh",
+    "wasm:goldens:update": "./scripts/update-wasm-goldens.sh"
+  },
+  "dependencies": {
+    "fix-webm-duration": "1.0.6",
+    "lucide-react": "^1.24.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
+    "@playwright/test": "^1.61.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.1.4",
+    "vitest": "^3.2.4"
+  }
+}

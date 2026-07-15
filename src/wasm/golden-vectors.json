@@ -1,0 +1,2619 @@
+{
+  "expected": {
+    "barrierSolve": "104735436920400",
+    "deckCatalog": [
+      {
+        "approachSteps": 60,
+        "artTheme": "electric_cyan",
+        "audioProfile": "steady_pressure",
+        "battleSteps": 240,
+        "calibrationDigest": "863f86c97cfabb4a847a3e14775c4fa8dd83079c50f7ac1dd329e68edab575f0",
+        "displayName": "Balanced Tape",
+        "driftPerVariance": "-500000000000",
+        "id": "balanced_tape",
+        "maxInitialSurvival": "970000000000",
+        "minInitialSurvival": "120000000000",
+        "monitoringConvention": "strikefall/brownian-bridge-extrema/v1",
+        "openingRunway": {
+          "steps": 40,
+          "varianceShareBps": 340
+        },
+        "riskMultiplierCap": "8000000000000",
+        "stepMs": 250,
+        "totalIntegratedVariance": "6400000000",
+        "varianceWeights": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "version": 3
+      },
+      {
+        "approachSteps": 60,
+        "artTheme": "violet_storm",
+        "audioProfile": "rising_break",
+        "battleSteps": 240,
+        "calibrationDigest": "e51e7172bddbf4156816c88bf38ae39b5b61d3306b21086731b02ad84ca216eb",
+        "displayName": "Compression Break",
+        "driftPerVariance": "-500000000000",
+        "id": "compression_break",
+        "maxInitialSurvival": "970000000000",
+        "minInitialSurvival": "120000000000",
+        "monitoringConvention": "strikefall/brownian-bridge-extrema/v1",
+        "openingRunway": {
+          "steps": 40,
+          "varianceShareBps": 1600
+        },
+        "riskMultiplierCap": "8000000000000",
+        "stepMs": 250,
+        "totalIntegratedVariance": "6400000000",
+        "varianceWeights": [
+          5,
+          10,
+          25,
+          60
+        ],
+        "version": 3
+      },
+      {
+        "approachSteps": 60,
+        "artTheme": "solar_flare",
+        "audioProfile": "front_loaded_impact",
+        "battleSteps": 240,
+        "calibrationDigest": "73b16b2cdccc3fbc95441dbd69088e4c6aeb4bd4a535d9722f214023732ad22f",
+        "displayName": "Opening Rush",
+        "driftPerVariance": "-500000000000",
+        "id": "opening_rush",
+        "maxInitialSurvival": "970000000000",
+        "minInitialSurvival": "120000000000",
+        "monitoringConvention": "strikefall/brownian-bridge-extrema/v1",
+        "openingRunway": {
+          "steps": 40,
+          "varianceShareBps": 125
+        },
+        "riskMultiplierCap": "8000000000000",
+        "stepMs": 250,
+        "totalIntegratedVariance": "6400000000",
+        "varianceWeights": [
+          55,
+          25,
+          15,
+          5
+        ],
+        "version": 3
+      },
+      {
+        "approachSteps": 60,
+        "artTheme": "magenta_pulse",
+        "audioProfile": "double_drop",
+        "battleSteps": 240,
+        "calibrationDigest": "9d269b398b1e14bdb387008f0d85374ffb141e708516a0de4bc24c744cdc9b69",
+        "displayName": "Pulse",
+        "driftPerVariance": "-500000000000",
+        "id": "pulse",
+        "maxInitialSurvival": "970000000000",
+        "minInitialSurvival": "120000000000",
+        "monitoringConvention": "strikefall/brownian-bridge-extrema/v1",
+        "openingRunway": {
+          "steps": 40,
+          "varianceShareBps": 450
+        },
+        "riskMultiplierCap": "8000000000000",
+        "stepMs": 250,
+        "totalIntegratedVariance": "6400000000",
+        "varianceWeights": [
+          15,
+          35,
+          15,
+          35
+        ],
+        "version": 3
+      }
+    ],
+    "lobbyScores": [
+      {
+        "barrier": "110000000000000",
+        "contenderId": 1,
+        "crowdFactor": "959625816220",
+        "initialSurvival": "777464975998",
+        "normalizedDistance": "1191377247550",
+        "riskMultiplier": "1157608416822",
+        "side": "upper",
+        "terminalScore": "111087092185595"
+      },
+      {
+        "barrier": "110500000000000",
+        "contenderId": 2,
+        "crowdFactor": "959625816220",
+        "initialSurvival": "798413913415",
+        "normalizedDistance": "1248066687125",
+        "riskMultiplier": "1127234865122",
+        "side": "upper",
+        "terminalScore": "108172367751434"
+      },
+      {
+        "barrier": "91000000000000",
+        "contenderId": 3,
+        "crowdFactor": "1341640786499",
+        "initialSurvival": "750157961977",
+        "normalizedDistance": "1178883493387",
+        "riskMultiplier": "1199747314056",
+        "side": "lower",
+        "terminalScore": "160962993003015"
+      }
+    ],
+    "noTouchQuote": {
+      "hitProbability": "222535024002",
+      "survivalProbability": "777464975998"
+    },
+    "roundPath": {
+      "approach": [
+        {
+          "intervalHigh": "100000000000000",
+          "intervalLow": "100000000000000",
+          "logReturn": "0",
+          "price": "100000000000000",
+          "step": 0,
+          "varianceElapsed": "0"
+        },
+        {
+          "intervalHigh": "100554542607500",
+          "intervalLow": "99799090160200",
+          "logReturn": "1969315201",
+          "price": "100197125557600",
+          "step": 1,
+          "varianceElapsed": "26666666"
+        },
+        {
+          "intervalHigh": "100797715636900",
+          "intervalLow": "100093415353800",
+          "logReturn": "7076864372",
+          "price": "100710196455200",
+          "step": 2,
+          "varianceElapsed": "53333333"
+        },
+        {
+          "intervalHigh": "101294771060000",
+          "intervalLow": "100690772447900",
+          "logReturn": "11405789179",
+          "price": "101147108320000",
+          "step": 3,
+          "varianceElapsed": "80000000"
+        },
+        {
+          "intervalHigh": "101618266144500",
+          "intervalLow": "100860610871400",
+          "logReturn": "10204812640",
+          "price": "101025705931200",
+          "step": 4,
+          "varianceElapsed": "106666666"
+        },
+        {
+          "intervalHigh": "101316556796500",
+          "intervalLow": "100211629326900",
+          "logReturn": "4674971848",
+          "price": "100468591657800",
+          "step": 5,
+          "varianceElapsed": "133333333"
+        },
+        {
+          "intervalHigh": "100773768938400",
+          "intervalLow": "100293282425400",
+          "logReturn": "7010318727",
+          "price": "100703494853200",
+          "step": 6,
+          "varianceElapsed": "160000000"
+        },
+        {
+          "intervalHigh": "100785326048500",
+          "intervalLow": "99476157203500",
+          "logReturn": "-5250624626",
+          "price": "99476313580900",
+          "step": 7,
+          "varianceElapsed": "186666666"
+        },
+        {
+          "intervalHigh": "99559707606500",
+          "intervalLow": "99148564268700",
+          "logReturn": "-6016037410",
+          "price": "99400202270800",
+          "step": 8,
+          "varianceElapsed": "213333333"
+        },
+        {
+          "intervalHigh": "99679396925600",
+          "intervalLow": "98804328686500",
+          "logReturn": "-8081694822",
+          "price": "99195087427700",
+          "step": 9,
+          "varianceElapsed": "240000000"
+        },
+        {
+          "intervalHigh": "99536618232700",
+          "intervalLow": "99003576740500",
+          "logReturn": "-9362296887",
+          "price": "99068139296200",
+          "step": 10,
+          "varianceElapsed": "266666666"
+        },
+        {
+          "intervalHigh": "100149412769700",
+          "intervalLow": "99052724075900",
+          "logReturn": "-3712472322",
+          "price": "99629441038300",
+          "step": 11,
+          "varianceElapsed": "293333333"
+        },
+        {
+          "intervalHigh": "99900462246900",
+          "intervalLow": "98921107909200",
+          "logReturn": "-9356090098",
+          "price": "99068754193200",
+          "step": 12,
+          "varianceElapsed": "320000000"
+        },
+        {
+          "intervalHigh": "99370844427300",
+          "intervalLow": "98332848435400",
+          "logReturn": "-8581872974",
+          "price": "99145484618300",
+          "step": 13,
+          "varianceElapsed": "346666666"
+        },
+        {
+          "intervalHigh": "99295856884300",
+          "intervalLow": "98806495569200",
+          "logReturn": "-9810476429",
+          "price": "99023748931100",
+          "step": 14,
+          "varianceElapsed": "373333333"
+        },
+        {
+          "intervalHigh": "99321323951200",
+          "intervalLow": "98843949086300",
+          "logReturn": "-7868864969",
+          "price": "99216201350300",
+          "step": 15,
+          "varianceElapsed": "400000000"
+        },
+        {
+          "intervalHigh": "99363702352500",
+          "intervalLow": "98502868196100",
+          "logReturn": "-14629149051",
+          "price": "98547733705100",
+          "step": 16,
+          "varianceElapsed": "426666666"
+        },
+        {
+          "intervalHigh": "98663060640900",
+          "intervalLow": "97940616209600",
+          "logReturn": "-19320610584",
+          "price": "98086483617700",
+          "step": 17,
+          "varianceElapsed": "453333333"
+        },
+        {
+          "intervalHigh": "98371060656700",
+          "intervalLow": "97689501238300",
+          "logReturn": "-22636599896",
+          "price": "97761768559800",
+          "step": 18,
+          "varianceElapsed": "480000000"
+        },
+        {
+          "intervalHigh": "98441054836400",
+          "intervalLow": "97641943198800",
+          "logReturn": "-16376112153",
+          "price": "98375724740900",
+          "step": 19,
+          "varianceElapsed": "506666666"
+        },
+        {
+          "intervalHigh": "98955599899000",
+          "intervalLow": "97893930852700",
+          "logReturn": "-19629736422",
+          "price": "98056167237300",
+          "step": 20,
+          "varianceElapsed": "533333333"
+        },
+        {
+          "intervalHigh": "98253171560100",
+          "intervalLow": "97498770701800",
+          "logReturn": "-24060822269",
+          "price": "97622633165200",
+          "step": 21,
+          "varianceElapsed": "560000000"
+        },
+        {
+          "intervalHigh": "97895677920400",
+          "intervalLow": "97099653515100",
+          "logReturn": "-25922905274",
+          "price": "97441020860100",
+          "step": 22,
+          "varianceElapsed": "586666666"
+        },
+        {
+          "intervalHigh": "97520847541600",
+          "intervalLow": "96351210414400",
+          "logReturn": "-35054428713",
+          "price": "96555286102800",
+          "step": 23,
+          "varianceElapsed": "613333333"
+        },
+        {
+          "intervalHigh": "97084253105000",
+          "intervalLow": "96363812600100",
+          "logReturn": "-32364530488",
+          "price": "96815359624300",
+          "step": 24,
+          "varianceElapsed": "640000000"
+        },
+        {
+          "intervalHigh": "97164340282700",
+          "intervalLow": "96270503840400",
+          "logReturn": "-34267223202",
+          "price": "96631324881300",
+          "step": 25,
+          "varianceElapsed": "666666666"
+        },
+        {
+          "intervalHigh": "97043007800300",
+          "intervalLow": "96046727302200",
+          "logReturn": "-34964947510",
+          "price": "96563926372500",
+          "step": 26,
+          "varianceElapsed": "693333333"
+        },
+        {
+          "intervalHigh": "96627784311400",
+          "intervalLow": "96121672603200",
+          "logReturn": "-37112589991",
+          "price": "96356764116900",
+          "step": 27,
+          "varianceElapsed": "720000000"
+        },
+        {
+          "intervalHigh": "96381433669500",
+          "intervalLow": "95104205607200",
+          "logReturn": "-48584183561",
+          "price": "95257714459400",
+          "step": 28,
+          "varianceElapsed": "746666666"
+        },
+        {
+          "intervalHigh": "95328339807100",
+          "intervalLow": "94464313248600",
+          "logReturn": "-56264515492",
+          "price": "94528905921700",
+          "step": 29,
+          "varianceElapsed": "773333333"
+        },
+        {
+          "intervalHigh": "94625831036700",
+          "intervalLow": "93400299569100",
+          "logReturn": "-60208941776",
+          "price": "94156778018600",
+          "step": 30,
+          "varianceElapsed": "800000000"
+        },
+        {
+          "intervalHigh": "94632614210500",
+          "intervalLow": "93948057219700",
+          "logReturn": "-58201478144",
+          "price": "94345984174900",
+          "step": 31,
+          "varianceElapsed": "826666666"
+        },
+        {
+          "intervalHigh": "94901491881600",
+          "intervalLow": "93968954432900",
+          "logReturn": "-54762559829",
+          "price": "94670990823100",
+          "step": 32,
+          "varianceElapsed": "853333333"
+        },
+        {
+          "intervalHigh": "94677148163100",
+          "intervalLow": "93528172596800",
+          "logReturn": "-62910444582",
+          "price": "93902756493000",
+          "step": 33,
+          "varianceElapsed": "880000000"
+        },
+        {
+          "intervalHigh": "94434431292000",
+          "intervalLow": "93812749849500",
+          "logReturn": "-57614104671",
+          "price": "94401416781500",
+          "step": 34,
+          "varianceElapsed": "906666666"
+        },
+        {
+          "intervalHigh": "94458203356600",
+          "intervalLow": "92703985079000",
+          "logReturn": "-75171017700",
+          "price": "92758483933700",
+          "step": 35,
+          "varianceElapsed": "933333333"
+        },
+        {
+          "intervalHigh": "93458103779700",
+          "intervalLow": "92745650197600",
+          "logReturn": "-67988181493",
+          "price": "93427151520600",
+          "step": 36,
+          "varianceElapsed": "960000000"
+        },
+        {
+          "intervalHigh": "93739295293900",
+          "intervalLow": "92739095815800",
+          "logReturn": "-75178963793",
+          "price": "92757746869100",
+          "step": 37,
+          "varianceElapsed": "986666666"
+        },
+        {
+          "intervalHigh": "92903406255700",
+          "intervalLow": "91276084162600",
+          "logReturn": "-90947949631",
+          "price": "91306523504500",
+          "step": 38,
+          "varianceElapsed": "1013333333"
+        },
+        {
+          "intervalHigh": "91616072277800",
+          "intervalLow": "90900586604000",
+          "logReturn": "-92202504169",
+          "price": "91192046315000",
+          "step": 39,
+          "varianceElapsed": "1040000000"
+        },
+        {
+          "intervalHigh": "91795653857300",
+          "intervalLow": "90798287238900",
+          "logReturn": "-91059714612",
+          "price": "91296319202900",
+          "step": 40,
+          "varianceElapsed": "1066666666"
+        },
+        {
+          "intervalHigh": "91683043443800",
+          "intervalLow": "91042712226500",
+          "logReturn": "-91715278263",
+          "price": "91236488268200",
+          "step": 41,
+          "varianceElapsed": "1093333333"
+        },
+        {
+          "intervalHigh": "91686153370400",
+          "intervalLow": "91118229287400",
+          "logReturn": "-88050661005",
+          "price": "91571448453200",
+          "step": 42,
+          "varianceElapsed": "1120000000"
+        },
+        {
+          "intervalHigh": "91752865554400",
+          "intervalLow": "91027885366800",
+          "logReturn": "-88841183657",
+          "price": "91499087754100",
+          "step": 43,
+          "varianceElapsed": "1146666666"
+        },
+        {
+          "intervalHigh": "91763946493700",
+          "intervalLow": "91192749881900",
+          "logReturn": "-89850076126",
+          "price": "91406821564700",
+          "step": 44,
+          "varianceElapsed": "1173333333"
+        },
+        {
+          "intervalHigh": "91412968752600",
+          "intervalLow": "91032740332300",
+          "logReturn": "-93425391850",
+          "price": "91080596844000",
+          "step": 45,
+          "varianceElapsed": "1200000000"
+        },
+        {
+          "intervalHigh": "92011428507700",
+          "intervalLow": "90952133224000",
+          "logReturn": "-85418425891",
+          "price": "91812803547600",
+          "step": 46,
+          "varianceElapsed": "1226666666"
+        },
+        {
+          "intervalHigh": "92223408417100",
+          "intervalLow": "91619299567800",
+          "logReturn": "-81784172360",
+          "price": "92147081610800",
+          "step": 47,
+          "varianceElapsed": "1253333333"
+        },
+        {
+          "intervalHigh": "92790489035800",
+          "intervalLow": "91834796583600",
+          "logReturn": "-76896596325",
+          "price": "92598559897000",
+          "step": 48,
+          "varianceElapsed": "1280000000"
+        },
+        {
+          "intervalHigh": "93063453766500",
+          "intervalLow": "92382217144200",
+          "logReturn": "-74482623992",
+          "price": "92822360274000",
+          "step": 49,
+          "varianceElapsed": "1306666666"
+        },
+        {
+          "intervalHigh": "93587961820100",
+          "intervalLow": "92405238507800",
+          "logReturn": "-68758243244",
+          "price": "93355234538600",
+          "step": 50,
+          "varianceElapsed": "1333333333"
+        },
+        {
+          "intervalHigh": "93682405033000",
+          "intervalLow": "93083384321400",
+          "logReturn": "-65611922464",
+          "price": "93649422615300",
+          "step": 51,
+          "varianceElapsed": "1360000000"
+        },
+        {
+          "intervalHigh": "93730656849400",
+          "intervalLow": "93032634060500",
+          "logReturn": "-69464782618",
+          "price": "93289298685500",
+          "step": 52,
+          "varianceElapsed": "1386666666"
+        },
+        {
+          "intervalHigh": "93794353318900",
+          "intervalLow": "93223243791200",
+          "logReturn": "-65139871015",
+          "price": "93693640396600",
+          "step": 53,
+          "varianceElapsed": "1413333333"
+        },
+        {
+          "intervalHigh": "93817838422500",
+          "intervalLow": "93077960463300",
+          "logReturn": "-69730941430",
+          "price": "93264472220600",
+          "step": 54,
+          "varianceElapsed": "1440000000"
+        },
+        {
+          "intervalHigh": "94230880901100",
+          "intervalLow": "93202541543000",
+          "logReturn": "-63456809606",
+          "price": "93851465324300",
+          "step": 55,
+          "varianceElapsed": "1466666666"
+        },
+        {
+          "intervalHigh": "93884720329600",
+          "intervalLow": "93492788135700",
+          "logReturn": "-66752982102",
+          "price": "93542623982400",
+          "step": 56,
+          "varianceElapsed": "1493333333"
+        },
+        {
+          "intervalHigh": "93811312818800",
+          "intervalLow": "93299242721000",
+          "logReturn": "-65136381147",
+          "price": "93693967375600",
+          "step": 57,
+          "varianceElapsed": "1520000000"
+        },
+        {
+          "intervalHigh": "93997125198200",
+          "intervalLow": "93203861805200",
+          "logReturn": "-65006131349",
+          "price": "93706171790700",
+          "step": 58,
+          "varianceElapsed": "1546666666"
+        },
+        {
+          "intervalHigh": "94609517023800",
+          "intervalLow": "93703165535500",
+          "logReturn": "-57083382398",
+          "price": "94451531013100",
+          "step": 59,
+          "varianceElapsed": "1573333333"
+        },
+        {
+          "intervalHigh": "94587160411800",
+          "intervalLow": "94277458051100",
+          "logReturn": "-56613136551",
+          "price": "94495956898100",
+          "step": 60,
+          "varianceElapsed": "1600000000"
+        }
+      ],
+      "battle": [
+        {
+          "intervalHigh": "94495956898100",
+          "intervalLow": "94495956898100",
+          "logReturn": "0",
+          "price": "94495956898100",
+          "step": 0,
+          "varianceElapsed": "0"
+        },
+        {
+          "intervalHigh": "94758933836041",
+          "intervalLow": "94470313179224",
+          "logReturn": "2225861269",
+          "price": "94706526050539",
+          "step": 1,
+          "varianceElapsed": "1360000"
+        },
+        {
+          "intervalHigh": "94815495059696",
+          "intervalLow": "94607687699577",
+          "logReturn": "2752539342",
+          "price": "94756419038859",
+          "step": 2,
+          "varianceElapsed": "2720000"
+        },
+        {
+          "intervalHigh": "94874327082334",
+          "intervalLow": "94632284666800",
+          "logReturn": "3214683863",
+          "price": "94800220319142",
+          "step": 3,
+          "varianceElapsed": "4080000"
+        },
+        {
+          "intervalHigh": "94838483231551",
+          "intervalLow": "94744379750286",
+          "logReturn": "2909022689",
+          "price": "94771248000595",
+          "step": 4,
+          "varianceElapsed": "5440000"
+        },
+        {
+          "intervalHigh": "94782157831818",
+          "intervalLow": "94572149372461",
+          "logReturn": "886738544",
+          "price": "94579787267664",
+          "step": 5,
+          "varianceElapsed": "6800000"
+        },
+        {
+          "intervalHigh": "94592914750225",
+          "intervalLow": "94512244832619",
+          "logReturn": "495335404",
+          "price": "94542775685645",
+          "step": 6,
+          "varianceElapsed": "8160000"
+        },
+        {
+          "intervalHigh": "94633193060875",
+          "intervalLow": "94491303670925",
+          "logReturn": "298881837",
+          "price": "94524204244421",
+          "step": 7,
+          "varianceElapsed": "9520000"
+        },
+        {
+          "intervalHigh": "94524515676636",
+          "intervalLow": "94312359561553",
+          "logReturn": "-1612952273",
+          "price": "94343662284581",
+          "step": 8,
+          "varianceElapsed": "10880000"
+        },
+        {
+          "intervalHigh": "94391114964330",
+          "intervalLow": "94056746258473",
+          "logReturn": "-4453575919",
+          "price": "94076047722732",
+          "step": 9,
+          "varianceElapsed": "12240000"
+        },
+        {
+          "intervalHigh": "94214315058368",
+          "intervalLow": "94005763529266",
+          "logReturn": "-4556351853",
+          "price": "94066379465949",
+          "step": 10,
+          "varianceElapsed": "13600000"
+        },
+        {
+          "intervalHigh": "94265950916226",
+          "intervalLow": "94027311264948",
+          "logReturn": "-2704859231",
+          "price": "94240704004017",
+          "step": 11,
+          "varianceElapsed": "14960000"
+        },
+        {
+          "intervalHigh": "94296805965131",
+          "intervalLow": "94222940460322",
+          "logReturn": "-2661934319",
+          "price": "94244749364781",
+          "step": 12,
+          "varianceElapsed": "16320000"
+        },
+        {
+          "intervalHigh": "94380863718804",
+          "intervalLow": "94203679131425",
+          "logReturn": "-2488231929",
+          "price": "94261121324822",
+          "step": 13,
+          "varianceElapsed": "17680000"
+        },
+        {
+          "intervalHigh": "94381021124877",
+          "intervalLow": "94099039688317",
+          "logReturn": "-2051898615",
+          "price": "94302259566634",
+          "step": 14,
+          "varianceElapsed": "19040000"
+        },
+        {
+          "intervalHigh": "94492619067402",
+          "intervalLow": "94209959566882",
+          "logReturn": "-601673241",
+          "price": "94439118310290",
+          "step": 15,
+          "varianceElapsed": "20400000"
+        },
+        {
+          "intervalHigh": "94541677061382",
+          "intervalLow": "94420130567505",
+          "logReturn": "-30283630",
+          "price": "94493095260878",
+          "step": 16,
+          "varianceElapsed": "21760000"
+        },
+        {
+          "intervalHigh": "94554132940955",
+          "intervalLow": "94363951720134",
+          "logReturn": "-1394583098",
+          "price": "94364266281866",
+          "step": 17,
+          "varianceElapsed": "23120000"
+        },
+        {
+          "intervalHigh": "94402330232755",
+          "intervalLow": "94270492841243",
+          "logReturn": "-2092301581",
+          "price": "94298449552586",
+          "step": 18,
+          "varianceElapsed": "24480000"
+        },
+        {
+          "intervalHigh": "94450331371006",
+          "intervalLow": "94173057173619",
+          "logReturn": "-1623002127",
+          "price": "94342714149381",
+          "step": 19,
+          "varianceElapsed": "25840000"
+        },
+        {
+          "intervalHigh": "94364332963410",
+          "intervalLow": "94028441664611",
+          "logReturn": "-4715693201",
+          "price": "94051391996317",
+          "step": 20,
+          "varianceElapsed": "27200000"
+        },
+        {
+          "intervalHigh": "94064984434139",
+          "intervalLow": "93791353658112",
+          "logReturn": "-6376533354",
+          "price": "93895317311495",
+          "step": 21,
+          "varianceElapsed": "28560000"
+        },
+        {
+          "intervalHigh": "93975842323615",
+          "intervalLow": "93859578770409",
+          "logReturn": "-5954998280",
+          "price": "93934905824434",
+          "step": 22,
+          "varianceElapsed": "29920000"
+        },
+        {
+          "intervalHigh": "94047254016380",
+          "intervalLow": "93903578980935",
+          "logReturn": "-6140612715",
+          "price": "93917471768013",
+          "step": 23,
+          "varianceElapsed": "31280000"
+        },
+        {
+          "intervalHigh": "93971357112898",
+          "intervalLow": "93900300767075",
+          "logReturn": "-5882970640",
+          "price": "93941671977613",
+          "step": 24,
+          "varianceElapsed": "32640000"
+        },
+        {
+          "intervalHigh": "94056850122098",
+          "intervalLow": "93848062609187",
+          "logReturn": "-5353976563",
+          "price": "93991379712090",
+          "step": 25,
+          "varianceElapsed": "34000000"
+        },
+        {
+          "intervalHigh": "94046127830953",
+          "intervalLow": "93913803898564",
+          "logReturn": "-5627208898",
+          "price": "93965701736162",
+          "step": 26,
+          "varianceElapsed": "35360000"
+        },
+        {
+          "intervalHigh": "94034223580032",
+          "intervalLow": "93903051332615",
+          "logReturn": "-6170085777",
+          "price": "93914703773261",
+          "step": 27,
+          "varianceElapsed": "36720000"
+        },
+        {
+          "intervalHigh": "93971482905821",
+          "intervalLow": "93830799489905",
+          "logReturn": "-7033756355",
+          "price": "93833627423442",
+          "step": 28,
+          "varianceElapsed": "38080000"
+        },
+        {
+          "intervalHigh": "93857259838588",
+          "intervalLow": "93714757243490",
+          "logReturn": "-7385355902",
+          "price": "93800641361911",
+          "step": 29,
+          "varianceElapsed": "39440000"
+        },
+        {
+          "intervalHigh": "93960813324237",
+          "intervalLow": "93786949379497",
+          "logReturn": "-6268831912",
+          "price": "93905430517138",
+          "step": 30,
+          "varianceElapsed": "40800000"
+        },
+        {
+          "intervalHigh": "93919124432183",
+          "intervalLow": "93738057626680",
+          "logReturn": "-7342949471",
+          "price": "93804619196621",
+          "step": 31,
+          "varianceElapsed": "42160000"
+        },
+        {
+          "intervalHigh": "93824716801412",
+          "intervalLow": "93753279598424",
+          "logReturn": "-7316100394",
+          "price": "93807137797927",
+          "step": 32,
+          "varianceElapsed": "43520000"
+        },
+        {
+          "intervalHigh": "93818374952750",
+          "intervalLow": "93614698299215",
+          "logReturn": "-9086166843",
+          "price": "93641239799136",
+          "step": 33,
+          "varianceElapsed": "44880000"
+        },
+        {
+          "intervalHigh": "93750820718940",
+          "intervalLow": "93608782006858",
+          "logReturn": "-8844433243",
+          "price": "93663878769309",
+          "step": 34,
+          "varianceElapsed": "46240000"
+        },
+        {
+          "intervalHigh": "93756587724884",
+          "intervalLow": "93599631658980",
+          "logReturn": "-7934581011",
+          "price": "93749137839216",
+          "step": 35,
+          "varianceElapsed": "47600000"
+        },
+        {
+          "intervalHigh": "93788238550795",
+          "intervalLow": "93634860575811",
+          "logReturn": "-8478699961",
+          "price": "93698141032189",
+          "step": 36,
+          "varianceElapsed": "48960000"
+        },
+        {
+          "intervalHigh": "93733418061542",
+          "intervalLow": "93557463390259",
+          "logReturn": "-9364311521",
+          "price": "93615197608575",
+          "step": 37,
+          "varianceElapsed": "50320000"
+        },
+        {
+          "intervalHigh": "93736554415047",
+          "intervalLow": "93608771834651",
+          "logReturn": "-8116083543",
+          "price": "93732123677375",
+          "step": 38,
+          "varianceElapsed": "51680000"
+        },
+        {
+          "intervalHigh": "93890254359207",
+          "intervalLow": "93719990475036",
+          "logReturn": "-6657780206",
+          "price": "93868913262275",
+          "step": 39,
+          "varianceElapsed": "53040000"
+        },
+        {
+          "intervalHigh": "94037838690499",
+          "intervalLow": "93825985638125",
+          "logReturn": "-6771439467",
+          "price": "93858244797256",
+          "step": 40,
+          "varianceElapsed": "54400000"
+        },
+        {
+          "intervalHigh": "94075381460089",
+          "intervalLow": "93529827629898",
+          "logReturn": "-8807010230",
+          "price": "93667384019533",
+          "step": 41,
+          "varianceElapsed": "131680000"
+        },
+        {
+          "intervalHigh": "94245528730674",
+          "intervalLow": "93108971411609",
+          "logReturn": "-3713918803",
+          "price": "94145657481451",
+          "step": 42,
+          "varianceElapsed": "208960000"
+        },
+        {
+          "intervalHigh": "95484957325325",
+          "intervalLow": "93590718205567",
+          "logReturn": "10085375602",
+          "price": "95453806131951",
+          "step": 43,
+          "varianceElapsed": "286240000"
+        },
+        {
+          "intervalHigh": "96209787709603",
+          "intervalLow": "94853921459655",
+          "logReturn": "17674679831",
+          "price": "96180990026105",
+          "step": 44,
+          "varianceElapsed": "363520000"
+        },
+        {
+          "intervalHigh": "96435375074611",
+          "intervalLow": "94813434559858",
+          "logReturn": "4517751415",
+          "price": "94923831929833",
+          "step": 45,
+          "varianceElapsed": "440800000"
+        },
+        {
+          "intervalHigh": "95824054968989",
+          "intervalLow": "94681557993441",
+          "logReturn": "12550543252",
+          "price": "95689406044280",
+          "step": 46,
+          "varianceElapsed": "518080000"
+        },
+        {
+          "intervalHigh": "97278044823458",
+          "intervalLow": "95667148326266",
+          "logReturn": "26523040191",
+          "price": "97035810387699",
+          "step": 47,
+          "varianceElapsed": "595360000"
+        },
+        {
+          "intervalHigh": "97591509912471",
+          "intervalLow": "96351075444173",
+          "logReturn": "28472171285",
+          "price": "97225130347706",
+          "step": 48,
+          "varianceElapsed": "672640000"
+        },
+        {
+          "intervalHigh": "97292838451644",
+          "intervalLow": "95294611448512",
+          "logReturn": "8735901291",
+          "price": "95325080548241",
+          "step": 49,
+          "varianceElapsed": "749920000"
+        },
+        {
+          "intervalHigh": "96217906227022",
+          "intervalLow": "94338559067377",
+          "logReturn": "3040111037",
+          "price": "94783672221283",
+          "step": 50,
+          "varianceElapsed": "827200000"
+        },
+        {
+          "intervalHigh": "95977433228501",
+          "intervalLow": "94227724104768",
+          "logReturn": "2043002581",
+          "price": "94689209722757",
+          "step": 51,
+          "varianceElapsed": "904480000"
+        },
+        {
+          "intervalHigh": "95760850477532",
+          "intervalLow": "94621048210491",
+          "logReturn": "9128262653",
+          "price": "95362489765088",
+          "step": 52,
+          "varianceElapsed": "981760000"
+        },
+        {
+          "intervalHigh": "95925022578543",
+          "intervalLow": "95065345362610",
+          "logReturn": "13674243904",
+          "price": "95796992728498",
+          "step": 53,
+          "varianceElapsed": "1059040000"
+        },
+        {
+          "intervalHigh": "95990673061652",
+          "intervalLow": "95434120610987",
+          "logReturn": "13330656190",
+          "price": "95764083712639",
+          "step": 54,
+          "varianceElapsed": "1136320000"
+        },
+        {
+          "intervalHigh": "96916907243021",
+          "intervalLow": "95730356505522",
+          "logReturn": "22633105766",
+          "price": "96659080650441",
+          "step": 55,
+          "varianceElapsed": "1213600000"
+        },
+        {
+          "intervalHigh": "97628606599627",
+          "intervalLow": "96424698670609",
+          "logReturn": "28112003183",
+          "price": "97190119262388",
+          "step": 56,
+          "varianceElapsed": "1290880000"
+        },
+        {
+          "intervalHigh": "98097402821630",
+          "intervalLow": "96757753637731",
+          "logReturn": "26898183737",
+          "price": "97072219574623",
+          "step": 57,
+          "varianceElapsed": "1368160000"
+        },
+        {
+          "intervalHigh": "98007185443691",
+          "intervalLow": "96928886739182",
+          "logReturn": "27714877892",
+          "price": "97151530270890",
+          "step": 58,
+          "varianceElapsed": "1445440000"
+        },
+        {
+          "intervalHigh": "97384790264790",
+          "intervalLow": "96782375094998",
+          "logReturn": "27551300115",
+          "price": "97135639739211",
+          "step": 59,
+          "varianceElapsed": "1522720000"
+        },
+        {
+          "intervalHigh": "98658990608896",
+          "intervalLow": "96655715186292",
+          "logReturn": "34044577694",
+          "price": "97768420598405",
+          "step": 60,
+          "varianceElapsed": "1600000000"
+        },
+        {
+          "intervalHigh": "97897215192323",
+          "intervalLow": "97033921943265",
+          "logReturn": "31058412309",
+          "price": "97476903400961",
+          "step": 61,
+          "varianceElapsed": "1626666666"
+        },
+        {
+          "intervalHigh": "98359329726263",
+          "intervalLow": "97401351944175",
+          "logReturn": "39180248728",
+          "price": "98271818580896",
+          "step": 62,
+          "varianceElapsed": "1653333333"
+        },
+        {
+          "intervalHigh": "98576629775251",
+          "intervalLow": "98114035735374",
+          "logReturn": "39272805212",
+          "price": "98280914695844",
+          "step": 63,
+          "varianceElapsed": "1680000000"
+        },
+        {
+          "intervalHigh": "98668211856712",
+          "intervalLow": "97757574537873",
+          "logReturn": "41917705019",
+          "price": "98541201933280",
+          "step": 64,
+          "varianceElapsed": "1706666666"
+        },
+        {
+          "intervalHigh": "99481960856102",
+          "intervalLow": "98465381007382",
+          "logReturn": "49268147394",
+          "price": "99268191935527",
+          "step": 65,
+          "varianceElapsed": "1733333333"
+        },
+        {
+          "intervalHigh": "99335425988497",
+          "intervalLow": "98528401323290",
+          "logReturn": "49123603541",
+          "price": "99253844365489",
+          "step": 66,
+          "varianceElapsed": "1760000000"
+        },
+        {
+          "intervalHigh": "99363245807894",
+          "intervalLow": "98805628848085",
+          "logReturn": "45154943984",
+          "price": "98860720251387",
+          "step": 67,
+          "varianceElapsed": "1786666666"
+        },
+        {
+          "intervalHigh": "99339974639453",
+          "intervalLow": "98388819391179",
+          "logReturn": "48358689538",
+          "price": "99177952739039",
+          "step": 68,
+          "varianceElapsed": "1813333333"
+        },
+        {
+          "intervalHigh": "99568662262495",
+          "intervalLow": "98842026530693",
+          "logReturn": "50547507369",
+          "price": "99395272960930",
+          "step": 69,
+          "varianceElapsed": "1840000000"
+        },
+        {
+          "intervalHigh": "99425523998198",
+          "intervalLow": "98526452409192",
+          "logReturn": "43397341715",
+          "price": "98687115034309",
+          "step": 70,
+          "varianceElapsed": "1866666666"
+        },
+        {
+          "intervalHigh": "98714741813019",
+          "intervalLow": "97856671676124",
+          "logReturn": "36199693315",
+          "price": "97979350055896",
+          "step": 71,
+          "varianceElapsed": "1893333333"
+        },
+        {
+          "intervalHigh": "98049249933077",
+          "intervalLow": "96670786456167",
+          "logReturn": "23512715761",
+          "price": "96744140348148",
+          "step": 72,
+          "varianceElapsed": "1920000000"
+        },
+        {
+          "intervalHigh": "97188380163711",
+          "intervalLow": "96723935086097",
+          "logReturn": "26201476620",
+          "price": "97004612222368",
+          "step": 73,
+          "varianceElapsed": "1946666666"
+        },
+        {
+          "intervalHigh": "98330652011146",
+          "intervalLow": "96964376832538",
+          "logReturn": "39078848913",
+          "price": "98261854341893",
+          "step": 74,
+          "varianceElapsed": "1973333333"
+        },
+        {
+          "intervalHigh": "98839960212362",
+          "intervalLow": "98208142030162",
+          "logReturn": "44812645002",
+          "price": "98826886118504",
+          "step": 75,
+          "varianceElapsed": "2000000000"
+        },
+        {
+          "intervalHigh": "98989868101620",
+          "intervalLow": "98342041183788",
+          "logReturn": "40048935449",
+          "price": "98357223094255",
+          "step": 76,
+          "varianceElapsed": "2026666666"
+        },
+        {
+          "intervalHigh": "98737304650446",
+          "intervalLow": "98244868929408",
+          "logReturn": "42741985649",
+          "price": "98622461022783",
+          "step": 77,
+          "varianceElapsed": "2053333333"
+        },
+        {
+          "intervalHigh": "98982119750849",
+          "intervalLow": "98232360802453",
+          "logReturn": "41015199765",
+          "price": "98452308100394",
+          "step": 78,
+          "varianceElapsed": "2080000000"
+        },
+        {
+          "intervalHigh": "99574573288120",
+          "intervalLow": "98344617572301",
+          "logReturn": "51251862162",
+          "price": "99465307159389",
+          "step": 79,
+          "varianceElapsed": "2106666666"
+        },
+        {
+          "intervalHigh": "99721530438974",
+          "intervalLow": "98931476612518",
+          "logReturn": "48692361474",
+          "price": "99211051160231",
+          "step": 80,
+          "varianceElapsed": "2133333333"
+        },
+        {
+          "intervalHigh": "99410819163988",
+          "intervalLow": "98604662307504",
+          "logReturn": "46339480698",
+          "price": "98977893788562",
+          "step": 81,
+          "varianceElapsed": "2160000000"
+        },
+        {
+          "intervalHigh": "99309127071321",
+          "intervalLow": "98366077855000",
+          "logReturn": "45647076306",
+          "price": "98909384780928",
+          "step": 82,
+          "varianceElapsed": "2186666666"
+        },
+        {
+          "intervalHigh": "99109329499400",
+          "intervalLow": "98401243329608",
+          "logReturn": "45028187992",
+          "price": "98848189856838",
+          "step": 83,
+          "varianceElapsed": "2213333333"
+        },
+        {
+          "intervalHigh": "99319210007924",
+          "intervalLow": "98513604282571",
+          "logReturn": "45398381262",
+          "price": "98884789565566",
+          "step": 84,
+          "varianceElapsed": "2240000000"
+        },
+        {
+          "intervalHigh": "99762613210525",
+          "intervalLow": "98870060297914",
+          "logReturn": "53694383991",
+          "price": "99708550285720",
+          "step": 85,
+          "varianceElapsed": "2266666666"
+        },
+        {
+          "intervalHigh": "99803322316242",
+          "intervalLow": "99242707236338",
+          "logReturn": "50549211608",
+          "price": "99395442354382",
+          "step": 86,
+          "varianceElapsed": "2293333333"
+        },
+        {
+          "intervalHigh": "99503131661492",
+          "intervalLow": "99238415455254",
+          "logReturn": "49826133385",
+          "price": "99323597652321",
+          "step": 87,
+          "varianceElapsed": "2320000000"
+        },
+        {
+          "intervalHigh": "100098702409088",
+          "intervalLow": "99249270081088",
+          "logReturn": "56501022882",
+          "price": "99988789261532",
+          "step": 88,
+          "varianceElapsed": "2346666666"
+        },
+        {
+          "intervalHigh": "100178392278130",
+          "intervalLow": "99533969070270",
+          "logReturn": "52018177886",
+          "price": "99541558200739",
+          "step": 89,
+          "varianceElapsed": "2373333333"
+        },
+        {
+          "intervalHigh": "99922594595768",
+          "intervalLow": "99175828920201",
+          "logReturn": "53442160468",
+          "price": "99683404615250",
+          "step": 90,
+          "varianceElapsed": "2400000000"
+        },
+        {
+          "intervalHigh": "100258228900244",
+          "intervalLow": "99653491936820",
+          "logReturn": "56397264018",
+          "price": "99978415076578",
+          "step": 91,
+          "varianceElapsed": "2426666666"
+        },
+        {
+          "intervalHigh": "100075005307113",
+          "intervalLow": "99504431270341",
+          "logReturn": "51739897452",
+          "price": "99513861586588",
+          "step": 92,
+          "varianceElapsed": "2453333333"
+        },
+        {
+          "intervalHigh": "99750280221526",
+          "intervalLow": "99029749954010",
+          "logReturn": "52343225265",
+          "price": "99573919182476",
+          "step": 93,
+          "varianceElapsed": "2480000000"
+        },
+        {
+          "intervalHigh": "100831344068427",
+          "intervalLow": "99497508831054",
+          "logReturn": "63625865318",
+          "price": "100703737552992",
+          "step": 94,
+          "varianceElapsed": "2506666666"
+        },
+        {
+          "intervalHigh": "101042436533711",
+          "intervalLow": "100293313767344",
+          "logReturn": "59871973487",
+          "price": "100326415271844",
+          "step": 95,
+          "varianceElapsed": "2533333333"
+        },
+        {
+          "intervalHigh": "100537446719200",
+          "intervalLow": "99222068915948",
+          "logReturn": "51446069266",
+          "price": "99484625904502",
+          "step": 96,
+          "varianceElapsed": "2560000000"
+        },
+        {
+          "intervalHigh": "99614006888639",
+          "intervalLow": "99015789019660",
+          "logReturn": "48336522151",
+          "price": "99175754247417",
+          "step": 97,
+          "varianceElapsed": "2586666666"
+        },
+        {
+          "intervalHigh": "99295625097124",
+          "intervalLow": "98674897495556",
+          "logReturn": "43922010289",
+          "price": "98738906647774",
+          "step": 98,
+          "varianceElapsed": "2613333333"
+        },
+        {
+          "intervalHigh": "99021423955220",
+          "intervalLow": "98256427062617",
+          "logReturn": "40159195397",
+          "price": "98368068554454",
+          "step": 99,
+          "varianceElapsed": "2640000000"
+        },
+        {
+          "intervalHigh": "98408183346938",
+          "intervalLow": "97962179581867",
+          "logReturn": "39103259958",
+          "price": "98264253045690",
+          "step": 100,
+          "varianceElapsed": "2666666666"
+        },
+        {
+          "intervalHigh": "99424197403478",
+          "intervalLow": "98234045005688",
+          "logReturn": "50718931165",
+          "price": "99412313136373",
+          "step": 101,
+          "varianceElapsed": "2693333333"
+        },
+        {
+          "intervalHigh": "99960818467835",
+          "intervalLow": "99315636254368",
+          "logReturn": "55116701598",
+          "price": "99850468414820",
+          "step": 102,
+          "varianceElapsed": "2720000000"
+        },
+        {
+          "intervalHigh": "100260453220162",
+          "intervalLow": "99654614166646",
+          "logReturn": "57405301284",
+          "price": "100079247857883",
+          "step": 103,
+          "varianceElapsed": "2746666666"
+        },
+        {
+          "intervalHigh": "100588094057876",
+          "intervalLow": "99950199549124",
+          "logReturn": "62050379870",
+          "price": "100545205195401",
+          "step": 104,
+          "varianceElapsed": "2773333333"
+        },
+        {
+          "intervalHigh": "100948028240618",
+          "intervalLow": "100409785334121",
+          "logReturn": "62108533147",
+          "price": "100551052398551",
+          "step": 105,
+          "varianceElapsed": "2800000000"
+        },
+        {
+          "intervalHigh": "100557535420771",
+          "intervalLow": "100321278830617",
+          "logReturn": "60262568224",
+          "price": "100365609895679",
+          "step": 106,
+          "varianceElapsed": "2826666666"
+        },
+        {
+          "intervalHigh": "100814779923548",
+          "intervalLow": "99822655534166",
+          "logReturn": "61778764224",
+          "price": "100517899253049",
+          "step": 107,
+          "varianceElapsed": "2853333333"
+        },
+        {
+          "intervalHigh": "100555712641388",
+          "intervalLow": "99855730128108",
+          "logReturn": "56495120810",
+          "price": "99988199122280",
+          "step": 108,
+          "varianceElapsed": "2880000000"
+        },
+        {
+          "intervalHigh": "100547128738562",
+          "intervalLow": "99149720925396",
+          "logReturn": "51389447923",
+          "price": "99478993110788",
+          "step": 109,
+          "varianceElapsed": "2906666666"
+        },
+        {
+          "intervalHigh": "100858795473318",
+          "intervalLow": "99449896438964",
+          "logReturn": "65058564301",
+          "price": "100848119098326",
+          "step": 110,
+          "varianceElapsed": "2933333333"
+        },
+        {
+          "intervalHigh": "101055953713535",
+          "intervalLow": "100205009196786",
+          "logReturn": "66260476618",
+          "price": "100969402566203",
+          "step": 111,
+          "varianceElapsed": "2960000000"
+        },
+        {
+          "intervalHigh": "101926800412712",
+          "intervalLow": "100934422610593",
+          "logReturn": "74708819962",
+          "price": "101826040235769",
+          "step": 112,
+          "varianceElapsed": "2986666666"
+        },
+        {
+          "intervalHigh": "102488765634973",
+          "intervalLow": "101514062960745",
+          "logReturn": "74516562361",
+          "price": "101806465287359",
+          "step": 113,
+          "varianceElapsed": "3013333333"
+        },
+        {
+          "intervalHigh": "102571529333703",
+          "intervalLow": "101766941107080",
+          "logReturn": "76846966817",
+          "price": "102043992187039",
+          "step": 114,
+          "varianceElapsed": "3040000000"
+        },
+        {
+          "intervalHigh": "102213293321172",
+          "intervalLow": "101186204578786",
+          "logReturn": "71665686596",
+          "price": "101516641025522",
+          "step": 115,
+          "varianceElapsed": "3066666666"
+        },
+        {
+          "intervalHigh": "101722370600130",
+          "intervalLow": "101112627894444",
+          "logReturn": "69929890278",
+          "price": "101340581659617",
+          "step": 116,
+          "varianceElapsed": "3093333333"
+        },
+        {
+          "intervalHigh": "101522422884907",
+          "intervalLow": "100138752861921",
+          "logReturn": "60465283935",
+          "price": "100385957644025",
+          "step": 117,
+          "varianceElapsed": "3120000000"
+        },
+        {
+          "intervalHigh": "100507537810307",
+          "intervalLow": "99857997063719",
+          "logReturn": "59814972122",
+          "price": "100320696692149",
+          "step": 118,
+          "varianceElapsed": "3146666666"
+        },
+        {
+          "intervalHigh": "100656591607025",
+          "intervalLow": "100092263177145",
+          "logReturn": "59689313237",
+          "price": "100308091297293",
+          "step": 119,
+          "varianceElapsed": "3173333333"
+        },
+        {
+          "intervalHigh": "100592564674165",
+          "intervalLow": "100139318447627",
+          "logReturn": "62160854784",
+          "price": "100556313531918",
+          "step": 120,
+          "varianceElapsed": "3200000000"
+        },
+        {
+          "intervalHigh": "100923872922362",
+          "intervalLow": "100492835566704",
+          "logReturn": "64368965845",
+          "price": "100778598364532",
+          "step": 121,
+          "varianceElapsed": "3226666666"
+        },
+        {
+          "intervalHigh": "100866254947681",
+          "intervalLow": "100183757573351",
+          "logReturn": "60288099250",
+          "price": "100368172365410",
+          "step": 122,
+          "varianceElapsed": "3253333333"
+        },
+        {
+          "intervalHigh": "100807889927369",
+          "intervalLow": "100177655506951",
+          "logReturn": "60686278310",
+          "price": "100408144827517",
+          "step": 123,
+          "varianceElapsed": "3280000000"
+        },
+        {
+          "intervalHigh": "101010560648859",
+          "intervalLow": "100284434813082",
+          "logReturn": "66157226531",
+          "price": "100958978004792",
+          "step": 124,
+          "varianceElapsed": "3306666666"
+        },
+        {
+          "intervalHigh": "101234347131277",
+          "intervalLow": "100474759118642",
+          "logReturn": "62593590378",
+          "price": "100599837244407",
+          "step": 125,
+          "varianceElapsed": "3333333333"
+        },
+        {
+          "intervalHigh": "101633672474702",
+          "intervalLow": "100428440411071",
+          "logReturn": "70648365456",
+          "price": "101413418514607",
+          "step": 126,
+          "varianceElapsed": "3360000000"
+        },
+        {
+          "intervalHigh": "102627135866595",
+          "intervalLow": "101207697002489",
+          "logReturn": "78551024781",
+          "price": "102218029307149",
+          "step": 127,
+          "varianceElapsed": "3386666666"
+        },
+        {
+          "intervalHigh": "102708556000171",
+          "intervalLow": "101768631573790",
+          "logReturn": "79236975885",
+          "price": "102288169931018",
+          "step": 128,
+          "varianceElapsed": "3413333333"
+        },
+        {
+          "intervalHigh": "102729548612551",
+          "intervalLow": "102183873947828",
+          "logReturn": "83365630064",
+          "price": "102711355403300",
+          "step": 129,
+          "varianceElapsed": "3440000000"
+        },
+        {
+          "intervalHigh": "103457311205993",
+          "intervalLow": "102675139828291",
+          "logReturn": "89481959489",
+          "price": "103341497001001",
+          "step": 130,
+          "varianceElapsed": "3466666666"
+        },
+        {
+          "intervalHigh": "103410452704348",
+          "intervalLow": "102802646816143",
+          "logReturn": "86020727829",
+          "price": "102984426448212",
+          "step": 131,
+          "varianceElapsed": "3493333333"
+        },
+        {
+          "intervalHigh": "104743695987768",
+          "intervalLow": "102942792988998",
+          "logReturn": "100938275731",
+          "price": "104532217483631",
+          "step": 132,
+          "varianceElapsed": "3520000000"
+        },
+        {
+          "intervalHigh": "104634634520743",
+          "intervalLow": "104210844689741",
+          "logReturn": "98402046311",
+          "price": "104267435713924",
+          "step": 133,
+          "varianceElapsed": "3546666666"
+        },
+        {
+          "intervalHigh": "104548296036278",
+          "intervalLow": "103227531540047",
+          "logReturn": "90032142986",
+          "price": "103398369430931",
+          "step": 134,
+          "varianceElapsed": "3573333333"
+        },
+        {
+          "intervalHigh": "104454247969426",
+          "intervalLow": "103146241191471",
+          "logReturn": "96698827995",
+          "price": "104089996659234",
+          "step": 135,
+          "varianceElapsed": "3600000000"
+        },
+        {
+          "intervalHigh": "104162267003119",
+          "intervalLow": "103838650302283",
+          "logReturn": "94439022147",
+          "price": "103855039055295",
+          "step": 136,
+          "varianceElapsed": "3626666666"
+        },
+        {
+          "intervalHigh": "104023700694465",
+          "intervalLow": "103314798162194",
+          "logReturn": "93068554154",
+          "price": "103712806533233",
+          "step": 137,
+          "varianceElapsed": "3653333333"
+        },
+        {
+          "intervalHigh": "104929642781165",
+          "intervalLow": "103549793520386",
+          "logReturn": "102105536685",
+          "price": "104654305099722",
+          "step": 138,
+          "varianceElapsed": "3680000000"
+        },
+        {
+          "intervalHigh": "104726613164787",
+          "intervalLow": "103712540836116",
+          "logReturn": "95042911723",
+          "price": "103917774971729",
+          "step": 139,
+          "varianceElapsed": "3706666666"
+        },
+        {
+          "intervalHigh": "104417122268326",
+          "intervalLow": "103671724444037",
+          "logReturn": "95247686388",
+          "price": "103939056878190",
+          "step": 140,
+          "varianceElapsed": "3733333333"
+        },
+        {
+          "intervalHigh": "104014426287570",
+          "intervalLow": "103277876384692",
+          "logReturn": "89578971294",
+          "price": "103351522832469",
+          "step": 141,
+          "varianceElapsed": "3760000000"
+        },
+        {
+          "intervalHigh": "103726056622314",
+          "intervalLow": "103254324990947",
+          "logReturn": "92889313083",
+          "price": "103694218604637",
+          "step": 142,
+          "varianceElapsed": "3786666666"
+        },
+        {
+          "intervalHigh": "103877263119425",
+          "intervalLow": "103480172095196",
+          "logReturn": "93329707988",
+          "price": "103739895067225",
+          "step": 143,
+          "varianceElapsed": "3813333333"
+        },
+        {
+          "intervalHigh": "104251242309380",
+          "intervalLow": "103421376311380",
+          "logReturn": "91861896540",
+          "price": "103587736159255",
+          "step": 144,
+          "varianceElapsed": "3840000000"
+        },
+        {
+          "intervalHigh": "103613298553871",
+          "intervalLow": "102988644643121",
+          "logReturn": "88674934373",
+          "price": "103258131461018",
+          "step": 145,
+          "varianceElapsed": "3866666666"
+        },
+        {
+          "intervalHigh": "103737483024001",
+          "intervalLow": "102831908959742",
+          "logReturn": "88444712437",
+          "price": "103234361910316",
+          "step": 146,
+          "varianceElapsed": "3893333333"
+        },
+        {
+          "intervalHigh": "103754306785371",
+          "intervalLow": "102845071041998",
+          "logReturn": "89732144003",
+          "price": "103367354677717",
+          "step": 147,
+          "varianceElapsed": "3920000000"
+        },
+        {
+          "intervalHigh": "103616009524755",
+          "intervalLow": "102591289583015",
+          "logReturn": "83727889836",
+          "price": "102748570335893",
+          "step": 148,
+          "varianceElapsed": "3946666666"
+        },
+        {
+          "intervalHigh": "103189104912352",
+          "intervalLow": "102273174774896",
+          "logReturn": "82552290839",
+          "price": "102627850192812",
+          "step": 149,
+          "varianceElapsed": "3973333333"
+        },
+        {
+          "intervalHigh": "103173229876026",
+          "intervalLow": "101911522609071",
+          "logReturn": "81669125715",
+          "price": "102537252866852",
+          "step": 150,
+          "varianceElapsed": "4000000000"
+        },
+        {
+          "intervalHigh": "103210558001262",
+          "intervalLow": "102524205480860",
+          "logReturn": "84531350337",
+          "price": "102831157927139",
+          "step": 151,
+          "varianceElapsed": "4026666666"
+        },
+        {
+          "intervalHigh": "103345341769812",
+          "intervalLow": "102819377469701",
+          "logReturn": "88409100071",
+          "price": "103230685555885",
+          "step": 152,
+          "varianceElapsed": "4053333333"
+        },
+        {
+          "intervalHigh": "103566880338561",
+          "intervalLow": "102357985366613",
+          "logReturn": "81714558106",
+          "price": "102541911485210",
+          "step": 153,
+          "varianceElapsed": "4080000000"
+        },
+        {
+          "intervalHigh": "102759288472239",
+          "intervalLow": "101952557876182",
+          "logReturn": "76017294828",
+          "price": "101959364256669",
+          "step": 154,
+          "varianceElapsed": "4106666666"
+        },
+        {
+          "intervalHigh": "102373969891813",
+          "intervalLow": "101803074732265",
+          "logReturn": "76157290757",
+          "price": "101973639151756",
+          "step": 155,
+          "varianceElapsed": "4133333333"
+        },
+        {
+          "intervalHigh": "102686054916608",
+          "intervalLow": "101735366659605",
+          "logReturn": "79575988014",
+          "price": "102322852739839",
+          "step": 156,
+          "varianceElapsed": "4160000000"
+        },
+        {
+          "intervalHigh": "102355504301652",
+          "intervalLow": "101418719469610",
+          "logReturn": "72708190367",
+          "price": "101622527690622",
+          "step": 157,
+          "varianceElapsed": "4186666666"
+        },
+        {
+          "intervalHigh": "102248462255749",
+          "intervalLow": "101049995224009",
+          "logReturn": "70931671682",
+          "price": "101442153637719",
+          "step": 158,
+          "varianceElapsed": "4213333333"
+        },
+        {
+          "intervalHigh": "101806883982124",
+          "intervalLow": "100922496101245",
+          "logReturn": "69215164519",
+          "price": "101268176813306",
+          "step": 159,
+          "varianceElapsed": "4240000000"
+        },
+        {
+          "intervalHigh": "101363470639823",
+          "intervalLow": "100736870854721",
+          "logReturn": "69884245181",
+          "price": "101335956064479",
+          "step": 160,
+          "varianceElapsed": "4266666666"
+        },
+        {
+          "intervalHigh": "101877149470305",
+          "intervalLow": "101136444353506",
+          "logReturn": "70006240998",
+          "price": "101348319381388",
+          "step": 161,
+          "varianceElapsed": "4293333333"
+        },
+        {
+          "intervalHigh": "101710086623255",
+          "intervalLow": "100999949354649",
+          "logReturn": "68808326621",
+          "price": "101226985460797",
+          "step": 162,
+          "varianceElapsed": "4320000000"
+        },
+        {
+          "intervalHigh": "101374747989257",
+          "intervalLow": "100997557718867",
+          "logReturn": "67659464830",
+          "price": "101110756423279",
+          "step": 163,
+          "varianceElapsed": "4346666666"
+        },
+        {
+          "intervalHigh": "101340842206894",
+          "intervalLow": "100731107246002",
+          "logReturn": "64797748506",
+          "price": "100821819745712",
+          "step": 164,
+          "varianceElapsed": "4373333333"
+        },
+        {
+          "intervalHigh": "100875927415487",
+          "intervalLow": "99948767311610",
+          "logReturn": "58619702321",
+          "price": "100200858027009",
+          "step": 165,
+          "varianceElapsed": "4400000000"
+        },
+        {
+          "intervalHigh": "101049697334671",
+          "intervalLow": "100046509241575",
+          "logReturn": "65264854844",
+          "price": "100868925257521",
+          "step": 166,
+          "varianceElapsed": "4426666666"
+        },
+        {
+          "intervalHigh": "100956754280293",
+          "intervalLow": "100446930518775",
+          "logReturn": "62572931454",
+          "price": "100597758981503",
+          "step": 167,
+          "varianceElapsed": "4453333333"
+        },
+        {
+          "intervalHigh": "100698645580712",
+          "intervalLow": "99665305868694",
+          "logReturn": "53335390038",
+          "price": "99672761943375",
+          "step": 168,
+          "varianceElapsed": "4480000000"
+        },
+        {
+          "intervalHigh": "99842656814220",
+          "intervalLow": "99573596909685",
+          "logReturn": "54196872320",
+          "price": "99758665258556",
+          "step": 169,
+          "varianceElapsed": "4506666666"
+        },
+        {
+          "intervalHigh": "99779142985335",
+          "intervalLow": "99573413317554",
+          "logReturn": "52981407802",
+          "price": "99637485800205",
+          "step": 170,
+          "varianceElapsed": "4533333333"
+        },
+        {
+          "intervalHigh": "99861302150527",
+          "intervalLow": "98862878081966",
+          "logReturn": "45803150960",
+          "price": "98924823233648",
+          "step": 171,
+          "varianceElapsed": "4560000000"
+        },
+        {
+          "intervalHigh": "99494751501210",
+          "intervalLow": "98684252527725",
+          "logReturn": "51447285132",
+          "price": "99484746864524",
+          "step": 172,
+          "varianceElapsed": "4586666666"
+        },
+        {
+          "intervalHigh": "99547882760799",
+          "intervalLow": "98260933606552",
+          "logReturn": "44029581553",
+          "price": "98749528688063",
+          "step": 173,
+          "varianceElapsed": "4613333333"
+        },
+        {
+          "intervalHigh": "99194933593984",
+          "intervalLow": "98560385596801",
+          "logReturn": "44363415681",
+          "price": "98782500154032",
+          "step": 174,
+          "varianceElapsed": "4640000000"
+        },
+        {
+          "intervalHigh": "99723244387457",
+          "intervalLow": "98412291812291",
+          "logReturn": "52813210836",
+          "price": "99620728486691",
+          "step": 175,
+          "varianceElapsed": "4666666666"
+        },
+        {
+          "intervalHigh": "100088999166028",
+          "intervalLow": "99506019609223",
+          "logReturn": "56039138582",
+          "price": "99942616673626",
+          "step": 176,
+          "varianceElapsed": "4693333333"
+        },
+        {
+          "intervalHigh": "99972607555115",
+          "intervalLow": "99709104688019",
+          "logReturn": "54754433665",
+          "price": "99814302343314",
+          "step": 177,
+          "varianceElapsed": "4720000000"
+        },
+        {
+          "intervalHigh": "100606551170522",
+          "intervalLow": "99624092142756",
+          "logReturn": "60710813922",
+          "price": "100410608433027",
+          "step": 178,
+          "varianceElapsed": "4746666666"
+        },
+        {
+          "intervalHigh": "101000161426917",
+          "intervalLow": "99900706309508",
+          "logReturn": "64167915637",
+          "price": "100758338842998",
+          "step": 179,
+          "varianceElapsed": "4773333333"
+        },
+        {
+          "intervalHigh": "101736210175307",
+          "intervalLow": "100628775051613",
+          "logReturn": "68507055398",
+          "price": "101196493276556",
+          "step": 180,
+          "varianceElapsed": "4800000000"
+        },
+        {
+          "intervalHigh": "101528702618448",
+          "intervalLow": "101019049057567",
+          "logReturn": "71075191681",
+          "price": "101456713660276",
+          "step": 181,
+          "varianceElapsed": "4826666666"
+        },
+        {
+          "intervalHigh": "101475294698888",
+          "intervalLow": "100647133436205",
+          "logReturn": "63402385660",
+          "price": "100681234830680",
+          "step": 182,
+          "varianceElapsed": "4853333333"
+        },
+        {
+          "intervalHigh": "102097265753570",
+          "intervalLow": "100499930261159",
+          "logReturn": "75628074280",
+          "price": "101919687299105",
+          "step": 183,
+          "varianceElapsed": "4880000000"
+        },
+        {
+          "intervalHigh": "102587324982464",
+          "intervalLow": "101662221909289",
+          "logReturn": "77022992716",
+          "price": "102061956153540",
+          "step": 184,
+          "varianceElapsed": "4906666666"
+        },
+        {
+          "intervalHigh": "102478978301945",
+          "intervalLow": "101772525449315",
+          "logReturn": "78738999050",
+          "price": "102237245472554",
+          "step": 185,
+          "varianceElapsed": "4933333333"
+        },
+        {
+          "intervalHigh": "102537910187910",
+          "intervalLow": "101745019687419",
+          "logReturn": "77103277682",
+          "price": "102070150523148",
+          "step": 186,
+          "varianceElapsed": "4960000000"
+        },
+        {
+          "intervalHigh": "102803643843079",
+          "intervalLow": "101748506907908",
+          "logReturn": "82189625921",
+          "price": "102590637420208",
+          "step": 187,
+          "varianceElapsed": "4986666666"
+        },
+        {
+          "intervalHigh": "103156349464141",
+          "intervalLow": "102568319907231",
+          "logReturn": "83433619062",
+          "price": "102718338882912",
+          "step": 188,
+          "varianceElapsed": "5013333333"
+        },
+        {
+          "intervalHigh": "102830365768288",
+          "intervalLow": "102305452579307",
+          "logReturn": "82577256946",
+          "price": "102630412442651",
+          "step": 189,
+          "varianceElapsed": "5040000000"
+        },
+        {
+          "intervalHigh": "103110507782365",
+          "intervalLow": "102400569135095",
+          "logReturn": "86396566157",
+          "price": "103023139217318",
+          "step": 190,
+          "varianceElapsed": "5066666666"
+        },
+        {
+          "intervalHigh": "103724590603345",
+          "intervalLow": "102850595580766",
+          "logReturn": "92311392441",
+          "price": "103634308888401",
+          "step": 191,
+          "varianceElapsed": "5093333333"
+        },
+        {
+          "intervalHigh": "103759006804958",
+          "intervalLow": "102859386509870",
+          "logReturn": "85990597919",
+          "price": "102981323583507",
+          "step": 192,
+          "varianceElapsed": "5120000000"
+        },
+        {
+          "intervalHigh": "104023676575128",
+          "intervalLow": "102942010084326",
+          "logReturn": "94959490189",
+          "price": "103909106353089",
+          "step": 193,
+          "varianceElapsed": "5146666666"
+        },
+        {
+          "intervalHigh": "104369420712213",
+          "intervalLow": "103792366440946",
+          "logReturn": "96205497605",
+          "price": "104038658564940",
+          "step": 194,
+          "varianceElapsed": "5173333333"
+        },
+        {
+          "intervalHigh": "104092524776094",
+          "intervalLow": "103381361295949",
+          "logReturn": "90993322650",
+          "price": "103497801619338",
+          "step": 195,
+          "varianceElapsed": "5200000000"
+        },
+        {
+          "intervalHigh": "103556627384832",
+          "intervalLow": "102577839767468",
+          "logReturn": "82592507333",
+          "price": "102631977608101",
+          "step": 196,
+          "varianceElapsed": "5226666666"
+        },
+        {
+          "intervalHigh": "103375151627853",
+          "intervalLow": "102440590438382",
+          "logReturn": "86528186449",
+          "price": "103036700045392",
+          "step": 197,
+          "varianceElapsed": "5253333333"
+        },
+        {
+          "intervalHigh": "104027586762639",
+          "intervalLow": "102993183622982",
+          "logReturn": "94843815444",
+          "price": "103897087388896",
+          "step": 198,
+          "varianceElapsed": "5280000000"
+        },
+        {
+          "intervalHigh": "104329714933194",
+          "intervalLow": "103682676756295",
+          "logReturn": "94916270220",
+          "price": "103904615501814",
+          "step": 199,
+          "varianceElapsed": "5306666666"
+        },
+        {
+          "intervalHigh": "104087989300804",
+          "intervalLow": "103481547374234",
+          "logReturn": "91184287504",
+          "price": "103517567949181",
+          "step": 200,
+          "varianceElapsed": "5333333333"
+        },
+        {
+          "intervalHigh": "104405972181417",
+          "intervalLow": "103469838812722",
+          "logReturn": "98509611742",
+          "price": "104278651888755",
+          "step": 201,
+          "varianceElapsed": "5360000000"
+        },
+        {
+          "intervalHigh": "104653893904724",
+          "intervalLow": "103584229169739",
+          "logReturn": "97365374414",
+          "price": "104159400601695",
+          "step": 202,
+          "varianceElapsed": "5386666666"
+        },
+        {
+          "intervalHigh": "104579890302579",
+          "intervalLow": "103980473083922",
+          "logReturn": "99230278035",
+          "price": "104353829083814",
+          "step": 203,
+          "varianceElapsed": "5413333333"
+        },
+        {
+          "intervalHigh": "105768420195717",
+          "intervalLow": "104309960991488",
+          "logReturn": "111188949213",
+          "price": "105609253856529",
+          "step": 204,
+          "varianceElapsed": "5440000000"
+        },
+        {
+          "intervalHigh": "106116462199207",
+          "intervalLow": "105285400569568",
+          "logReturn": "113674853891",
+          "price": "105872114983250",
+          "step": 205,
+          "varianceElapsed": "5466666666"
+        },
+        {
+          "intervalHigh": "105918070509691",
+          "intervalLow": "104626503413343",
+          "logReturn": "101966368049",
+          "price": "104639741516274",
+          "step": 206,
+          "varianceElapsed": "5493333333"
+        },
+        {
+          "intervalHigh": "105240979335614",
+          "intervalLow": "104443842386584",
+          "logReturn": "106343738284",
+          "price": "105098792390936",
+          "step": 207,
+          "varianceElapsed": "5520000000"
+        },
+        {
+          "intervalHigh": "105128754934127",
+          "intervalLow": "103990687597452",
+          "logReturn": "96424953549",
+          "price": "104061492972407",
+          "step": 208,
+          "varianceElapsed": "5546666666"
+        },
+        {
+          "intervalHigh": "104857401651177",
+          "intervalLow": "103953659967374",
+          "logReturn": "102391844392",
+          "price": "104684272723583",
+          "step": 209,
+          "varianceElapsed": "5573333333"
+        },
+        {
+          "intervalHigh": "104833808640846",
+          "intervalLow": "103893932438304",
+          "logReturn": "96089019637",
+          "price": "104026541059135",
+          "step": 210,
+          "varianceElapsed": "5600000000"
+        },
+        {
+          "intervalHigh": "105183619466717",
+          "intervalLow": "103692258274483",
+          "logReturn": "101260880936",
+          "price": "104565945561151",
+          "step": 211,
+          "varianceElapsed": "5626666666"
+        },
+        {
+          "intervalHigh": "104622384528960",
+          "intervalLow": "103637507853888",
+          "logReturn": "94995282989",
+          "price": "103912825617472",
+          "step": 212,
+          "varianceElapsed": "5653333333"
+        },
+        {
+          "intervalHigh": "104440417366924",
+          "intervalLow": "103266857557013",
+          "logReturn": "90741173066",
+          "price": "103471707981682",
+          "step": 213,
+          "varianceElapsed": "5680000000"
+        },
+        {
+          "intervalHigh": "103935136952209",
+          "intervalLow": "103199727931053",
+          "logReturn": "94626868483",
+          "price": "103874549676338",
+          "step": 214,
+          "varianceElapsed": "5706666666"
+        },
+        {
+          "intervalHigh": "104959962275462",
+          "intervalLow": "103783290527722",
+          "logReturn": "104327199007",
+          "price": "104887070093090",
+          "step": 215,
+          "varianceElapsed": "5733333333"
+        },
+        {
+          "intervalHigh": "104920564666375",
+          "intervalLow": "103999162331178",
+          "logReturn": "97537634145",
+          "price": "104177344617453",
+          "step": 216,
+          "varianceElapsed": "5760000000"
+        },
+        {
+          "intervalHigh": "104413639446907",
+          "intervalLow": "103617868258526",
+          "logReturn": "93971622000",
+          "price": "103806508537275",
+          "step": 217,
+          "varianceElapsed": "5786666666"
+        },
+        {
+          "intervalHigh": "103987569355987",
+          "intervalLow": "102825987749627",
+          "logReturn": "85669458457",
+          "price": "102948257526330",
+          "step": 218,
+          "varianceElapsed": "5813333333"
+        },
+        {
+          "intervalHigh": "103667247880834",
+          "intervalLow": "102822281372130",
+          "logReturn": "90880476129",
+          "price": "103486122911462",
+          "step": 219,
+          "varianceElapsed": "5840000000"
+        },
+        {
+          "intervalHigh": "103653247451332",
+          "intervalLow": "102730553748846",
+          "logReturn": "83662228574",
+          "price": "102741823956559",
+          "step": 220,
+          "varianceElapsed": "5866666666"
+        },
+        {
+          "intervalHigh": "103033953009938",
+          "intervalLow": "102398949540919",
+          "logReturn": "81648393374",
+          "price": "102535127051598",
+          "step": 221,
+          "varianceElapsed": "5893333333"
+        },
+        {
+          "intervalHigh": "103364246090904",
+          "intervalLow": "102521366244472",
+          "logReturn": "86841954915",
+          "price": "103069034785224",
+          "step": 222,
+          "varianceElapsed": "5920000000"
+        },
+        {
+          "intervalHigh": "103273948203733",
+          "intervalLow": "102637538115809",
+          "logReturn": "85334341275",
+          "price": "102913763576467",
+          "step": 223,
+          "varianceElapsed": "5946666666"
+        },
+        {
+          "intervalHigh": "103362848167045",
+          "intervalLow": "102163929031778",
+          "logReturn": "81332139161",
+          "price": "102502705012716",
+          "step": 224,
+          "varianceElapsed": "5973333333"
+        },
+        {
+          "intervalHigh": "102892834062628",
+          "intervalLow": "102357266368138",
+          "logReturn": "83151445237",
+          "price": "102689358545249",
+          "step": 225,
+          "varianceElapsed": "6000000000"
+        },
+        {
+          "intervalHigh": "102838761491771",
+          "intervalLow": "101944275007614",
+          "logReturn": "76693619005",
+          "price": "102028345163882",
+          "step": 226,
+          "varianceElapsed": "6026666666"
+        },
+        {
+          "intervalHigh": "102627515519694",
+          "intervalLow": "101680038737363",
+          "logReturn": "75599499827",
+          "price": "101916775041345",
+          "step": 227,
+          "varianceElapsed": "6053333333"
+        },
+        {
+          "intervalHigh": "103685815650324",
+          "intervalLow": "101848255040523",
+          "logReturn": "92567904900",
+          "price": "103660895789660",
+          "step": 228,
+          "varianceElapsed": "6080000000"
+        },
+        {
+          "intervalHigh": "103807077971328",
+          "intervalLow": "103505001872486",
+          "logReturn": "93631103027",
+          "price": "103771166469284",
+          "step": 229,
+          "varianceElapsed": "6106666666"
+        },
+        {
+          "intervalHigh": "103871243228599",
+          "intervalLow": "103208031577486",
+          "logReturn": "88948821811",
+          "price": "103286416439315",
+          "step": 230,
+          "varianceElapsed": "6133333333"
+        },
+        {
+          "intervalHigh": "103588368711883",
+          "intervalLow": "102769107585108",
+          "logReturn": "88054304051",
+          "price": "103194066216095",
+          "step": 231,
+          "varianceElapsed": "6160000000"
+        },
+        {
+          "intervalHigh": "103586383263948",
+          "intervalLow": "103057701441171",
+          "logReturn": "91344312619",
+          "price": "103534134685423",
+          "step": 232,
+          "varianceElapsed": "6186666666"
+        },
+        {
+          "intervalHigh": "104498656439055",
+          "intervalLow": "103339967106167",
+          "logReturn": "98727474749",
+          "price": "104301372824343",
+          "step": 233,
+          "varianceElapsed": "6213333333"
+        },
+        {
+          "intervalHigh": "104846828338484",
+          "intervalLow": "103717879161057",
+          "logReturn": "95791980002",
+          "price": "103995645642124",
+          "step": 234,
+          "varianceElapsed": "6240000000"
+        },
+        {
+          "intervalHigh": "104040088408777",
+          "intervalLow": "102791829599462",
+          "logReturn": "89150624799",
+          "price": "103307262050099",
+          "step": 235,
+          "varianceElapsed": "6266666666"
+        },
+        {
+          "intervalHigh": "103808269671275",
+          "intervalLow": "103054431182265",
+          "logReturn": "91583729836",
+          "price": "103558925507416",
+          "step": 236,
+          "varianceElapsed": "6293333333"
+        },
+        {
+          "intervalHigh": "104106166513212",
+          "intervalLow": "103222963647352",
+          "logReturn": "95158736963",
+          "price": "103929811970003",
+          "step": 237,
+          "varianceElapsed": "6320000000"
+        },
+        {
+          "intervalHigh": "104316880702866",
+          "intervalLow": "103725472918898",
+          "logReturn": "95889116009",
+          "price": "104005747854580",
+          "step": 238,
+          "varianceElapsed": "6346666666"
+        },
+        {
+          "intervalHigh": "104097572004727",
+          "intervalLow": "103206577078803",
+          "logReturn": "89110840944",
+          "price": "103303152170708",
+          "step": 239,
+          "varianceElapsed": "6373333333"
+        },
+        {
+          "intervalHigh": "103504568277126",
+          "intervalLow": "102055929554635",
+          "logReturn": "77121421319",
+          "price": "102072002463699",
+          "step": 240,
+          "varianceElapsed": "6400000000"
+        }
+      ]
+    }
+  },
+  "inputs": {
+    "barrierSolve": {
+      "driftPerVariance": "-500000000000",
+      "remainingVariance": "6400000000",
+      "side": "upper",
+      "spot": "100000000000000",
+      "targetSurvival": "450000000000"
+    },
+    "lobbyScores": {
+      "driftPerVariance": "-500000000000",
+      "placements": [
+        {
+          "barrier": "110000000000000",
+          "contenderId": 1,
+          "side": "upper"
+        },
+        {
+          "barrier": "110500000000000",
+          "contenderId": 2,
+          "side": "upper"
+        },
+        {
+          "barrier": "91000000000000",
+          "contenderId": 3,
+          "side": "lower"
+        }
+      ],
+      "remainingVariance": "6400000000",
+      "spot": "100000000000000"
+    },
+    "noTouchQuote": {
+      "alreadyBreached": false,
+      "barrier": "110000000000000",
+      "driftPerVariance": "-500000000000",
+      "remainingVariance": "6400000000",
+      "side": "upper",
+      "spot": "100000000000000"
+    },
+    "roundPath": {
+      "deckId": "balanced_tape",
+      "deckVersion": 3,
+      "initialSpot": "100000000000000",
+      "seed": "3405691582"
+    }
+  },
+  "schemaVersion": 1
+}

@@ -1,0 +1,64 @@
+.offline-status {
+  position: fixed;
+  z-index: 80;
+  bottom: max(10px, env(safe-area-inset-bottom));
+  left: max(10px, env(safe-area-inset-left));
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid rgba(199, 243, 107, 0.22);
+  border-radius: 999px;
+  background: rgba(5, 13, 11, 0.88);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.24);
+  color: #b8c7c1;
+  padding: 0 10px;
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+  text-transform: uppercase;
+  backdrop-filter: blur(12px);
+}
+
+.offline-status--ready {
+  color: #c7f36b;
+  animation: offline-status-dismiss 4.5s ease forwards;
+}
+
+.offline-status--offline {
+  border-color: rgba(255, 199, 107, 0.36);
+  color: #ffc76b;
+}
+
+.offline-status--error {
+  border-color: rgba(255, 112, 112, 0.3);
+  color: #ff8d8d;
+}
+
+.offline-status__spinner {
+  animation: offline-status-spin 1s linear infinite;
+}
+
+@keyframes offline-status-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes offline-status-dismiss {
+  0%, 82% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .offline-status__spinner,
+  .offline-status--ready { animation: none; }
+}
+
+@media (max-width: 520px) {
+  .offline-status {
+    bottom: max(6px, env(safe-area-inset-bottom));
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

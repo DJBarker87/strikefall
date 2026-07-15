@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Strikefall">
+  <defs>
+    <radialGradient id="ground" cx="50%" cy="45%" r="72%">
+      <stop offset="0" stop-color="#193b30"/>
+      <stop offset="1" stop-color="#07100f"/>
+    </radialGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#efffc0"/>
+      <stop offset="1" stop-color="#a9ed61"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#ground)"/>
+  <circle cx="256" cy="256" r="205" fill="none" stroke="#c7f36b" stroke-opacity=".08" stroke-width="32"/>
+  <circle cx="256" cy="256" r="166" fill="none" stroke="#c7f36b" stroke-opacity=".16" stroke-width="4" stroke-dasharray="4 23"/>
+  <path d="M283 92 143 286h88l-20 140 161-228h-82l-7-106Z" fill="url(#signal)"/>
+</svg>

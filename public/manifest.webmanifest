@@ -1,0 +1,56 @@
+{
+  "id": "/",
+  "name": "Strikefall — Solo Survival",
+  "short_name": "Strikefall",
+  "description": "Plant a flag, out-position 19 bots, and survive the unseen strike.",
+  "lang": "en-GB",
+  "start_url": "/?source=installed",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#07100f",
+  "theme_color": "#07100f",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    {
+      "src": "/icons/strikefall-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/strikefall-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/strikefall-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/strikefall-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Start practice",
+      "short_name": "Practice",
+      "description": "Open a fresh local Strikefall run.",
+      "url": "/?mode=practice",
+      "icons": [
+        {
+          "src": "/icons/strikefall-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

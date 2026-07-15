@@ -1,0 +1,11 @@
+[package]
+name = "strikefall-wasm-goldens"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+serde_json = "=1.0.150"
+strikefall-wasm = { path = "../../crates/strikefall-wasm" }
+
+[workspace]

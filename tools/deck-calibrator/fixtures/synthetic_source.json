@@ -1,0 +1,16 @@
+{
+  "description": "Purpose-built deterministic regime-shape fixture; it contains no market observations.",
+  "license": {
+    "identifier": "CC0-1.0",
+    "name": "CC0 1.0 Universal",
+    "reference": "local:tools/deck-calibrator/fixtures/NOTICE.md",
+    "terms_confirmed": true
+  },
+  "local_only": true,
+  "return_column": "log_return",
+  "return_kind": "log_return",
+  "sampling_interval": "one synthetic model step",
+  "schema": "strikefall/calibration-source/v1",
+  "source_id": "strikefall_synthetic_shapes_v1",
+  "source_kind": "synthetic"
+}

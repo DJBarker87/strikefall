@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-15T07:38:14.375Z",
+  "provenance": {
+    "source": {
+      "schemaVersion": 1,
+      "algorithm": "sha256",
+      "roots": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "crates/strikefall-core/Cargo.toml",
+        "crates/strikefall-core/src",
+        "rust-toolchain.toml",
+        "tools/evidence/provenance.mjs",
+        "tools/sbf-benchmark/check-report.mjs",
+        "tools/sbf-benchmark/evidence.mjs",
+        "tools/sbf-benchmark/measure.mjs",
+        "tools/sbf-benchmark/package-lock.json",
+        "tools/sbf-benchmark/package.json",
+        "tools/sbf-benchmark/program/Cargo.lock",
+        "tools/sbf-benchmark/program/Cargo.toml",
+        "tools/sbf-benchmark/program/src",
+        "tools/sbf-benchmark/run.sh"
+      ],
+      "fileCount": 22,
+      "treeSha256": "ac95ed7475531cdfaa23c7d32eb19a5fdeec449acd6a9f76a822537af5851fa0",
+      "files": {
+        "Cargo.lock": {
+          "bytes": 59918,
+          "sha256": "762631031cdbff2cc5d4c6058adb8450c406dcf8046cfd0e3512b2fc016bbd02"
+        },
+        "Cargo.toml": {
+          "bytes": 1846,
+          "sha256": "101e6c0f257c6ab50efe90caa260fbe4dccc3974aa05d4a890af69143707af52"
+        },
+        "crates/strikefall-core/Cargo.toml": {
+          "bytes": 412,
+          "sha256": "fb60b71516708e09d09aaad3ccd013ffc38642188e103fa14cfd13c8a5a92c3c"
+        },
+        "crates/strikefall-core/src/deck.rs": {
+          "bytes": 20969,
+          "sha256": "4ce38f2140f3076e045a1440efc84738449711b711e820c6cb6529912176053e"
+        },
+        "crates/strikefall-core/src/error.rs": {
+          "bytes": 1445,
+          "sha256": "bf3ea8e9985bca195ecbc3486999895e94c415f4300416f14b039ff5a7d9394f"
+        },
+        "crates/strikefall-core/src/hit.rs": {
+          "bytes": 4411,
+          "sha256": "4ddef3979d4e44d06b620c24f5a5ee72dce2077aaea67d755f52b6f85a3a549c"
+        },
+        "crates/strikefall-core/src/lib.rs": {
+          "bytes": 1337,
+          "sha256": "141f9588adfa8a1215832f58dcc4c8de41b49f7a4947ef032866c6b523fdc1db"
+        },
+        "crates/strikefall-core/src/no_touch.rs": {
+          "bytes": 12429,
+          "sha256": "f7aa314f367ad220cbe6c239980768dadb71a042eb039ea8f7cf65ff189aab7d"
+        },
+        "crates/strikefall-core/src/path.rs": {
+          "bytes": 13411,
+          "sha256": "1cbec39f15ea74054ec85f76d4e535db0420db57018c48a34b8c749f9d5e53b6"
+        },
+        "crates/strikefall-core/src/rng.rs": {
+          "bytes": 1934,
+          "sha256": "6c53c9b82d3372cd92cbbfe17c811520ed47e8214d9c2e2e541b1bcab45790f1"
+        },
+        "crates/strikefall-core/src/scoring.rs": {
+          "bytes": 9435,
+          "sha256": "0670cfdd87f684256b0f96c0ec2bd403dca106e84bb923a8b159f550d9339863"
+        },
+        "rust-toolchain.toml": {
+          "bytes": 113,
+          "sha256": "e9f0cde5a15d5e30e8489bea30f4085c909c8eed57d699d335a14d2d23aad154"
+        },
+        "tools/evidence/provenance.mjs": {
+          "bytes": 5136,
+          "sha256": "5f543c11f4e8529b88761266a9084d67c1a52fe66eac1a0c7162e5e4b8b599e2"
+        },
+        "tools/sbf-benchmark/check-report.mjs": {
+          "bytes": 3206,
+          "sha256": "1af0255f43c233d2f4e7be6e919801da0f73b482827c22d454ed73686b8a522a"
+        },
+        "tools/sbf-benchmark/evidence.mjs": {
+          "bytes": 3105,
+          "sha256": "4f7238ddf886775f12d2385dbc79f92dca3ad0f504ac77969da3ea7f2641bda3"
+        },
+        "tools/sbf-benchmark/measure.mjs": {
+          "bytes": 7053,
+          "sha256": "d18c2837d2dfbab02150c11ca37c5ea0d0833c6cb95c1a1dd5d813da3815daa3"
+        },
+        "tools/sbf-benchmark/package-lock.json": {
+          "bytes": 36153,
+          "sha256": "6d7cb1f984d93bd2b39f70f8e9a8d0f3d5b940e0bb0d7bb3c619a6ac22e0cb63"
+        },
+        "tools/sbf-benchmark/package.json": {
+          "bytes": 180,
+          "sha256": "934b9cbc8a5a3732e724870ae6aff437dca73a6c3912b36a461bff352cd0aac8"
+        },
+        "tools/sbf-benchmark/program/Cargo.lock": {
+          "bytes": 13637,
+          "sha256": "adc477d1b9a226c18f2322e1d3669628ee565e3559fb12f6fb17a57b15d9b224"
+        },
+        "tools/sbf-benchmark/program/Cargo.toml": {
+          "bytes": 920,
+          "sha256": "69ce5a6eb2532e20a8a074e185855e90a91cb1b69bdac5ab061982c68918f911"
+        },
+        "tools/sbf-benchmark/program/src/lib.rs": {
+          "bytes": 3041,
+          "sha256": "f4dd3d9b83feb94b3fe9dc479628c4fe9c0e4c9ae3bc5e84418e948f5c46c873"
+        },
+        "tools/sbf-benchmark/run.sh": {
+          "bytes": 3113,
+          "sha256": "3ce579a2be69ab590fac6be9dddc41c47bdd56038d394328a7c4e058e5fa5133"
+        }
+      }
+    },
+    "git": {
+      "commit": null,
+      "worktree": "dirty",
+      "statusSha256": "08248f6ea44485af511c33c8c445e33b1849f3d7d52145b2a3231bea2b3f534b"
+    }
+  },
+  "toolchain": {
+    "target": "Agave local validator, genesis-loaded immutable SBF program",
+    "rpc": "http://127.0.0.1:18899",
+    "solanaCli": "solana-cli 2.3.0 (src:a2e21dda; feat:3640012085, client:Agave)",
+    "cargoBuildSbf": "solana-cargo-build-sbf 2.3.0;platform-tools v1.48;rustc 1.84.1",
+    "simulation": "unsigned simulateTransaction; CU is the difference between product-call log markers"
+  },
+  "dependency": "solmath = =0.2.0 (default-features=false, transcendental)",
+  "samples": 200,
+  "targetCu": 30000,
+  "mathCu": {
+    "min": 9787,
+    "average": 10904,
+    "p50": 11147,
+    "p95": 11303,
+    "p99": 11308,
+    "max": 11317
+  },
+  "transactionCu": {
+    "average": 11424,
+    "p99": 11829,
+    "max": 11836
+  },
+  "footprint": {
+    "baselineBytes": 22352,
+    "quoteBytes": 107608,
+    "linkedDeltaBytes": 85256
+  },
+  "artifacts": {
+    "baseline": {
+      "path": "tools/sbf-benchmark/artifacts/baseline.so",
+      "bytes": 22352,
+      "sha256": "66af8eb3c5fc76bb19b934a80740a78efb5cef267ff65cfe4fe4f58b36e3933d"
+    },
+    "quote": {
+      "path": "tools/sbf-benchmark/artifacts/quote.so",
+      "bytes": 107608,
+      "sha256": "dd5af1cd011668554cb0718c09bf48d56be39db39afcbf5a68a046c2f9253cf5"
+    }
+  },
+  "passed": true
+}
