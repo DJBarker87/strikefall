@@ -81,6 +81,17 @@ interface PointerPreview {
   y: number
 }
 
+/**
+ * Mutable camera state: the drawn world window eases toward the fitted target
+ * instead of snapping, so kills, spikes, and line drift pan the view gently.
+ */
+interface ViewEase {
+  roundId: string
+  worldMin: number
+  worldMax: number
+  lastNow: number
+}
+
 interface ImpactBurst {
   id: string
   contenderId: string
@@ -296,6 +307,7 @@ function buildView(
   height: number,
   impacts: ImpactBurst[],
   now: number,
+  ease?: ViewEase | null,
 ): ArenaView {
   const compact = width < 560
   const left = compact ? 18 : 32
@@ -367,8 +379,31 @@ function buildView(
   }
 
   const padding = round.phase === 'battle' ? 1.45 : 1.24
-  const worldMax = line + Math.max(fallbackSpan * 0.72, upperExtent * padding)
-  const worldMin = line - Math.max(fallbackSpan * 0.72, lowerExtent * padding)
+  let worldMax = line + Math.max(fallbackSpan * 0.72, upperExtent * padding)
+  let worldMin = line - Math.max(fallbackSpan * 0.72, lowerExtent * padding)
+
+  if (ease) {
+    const stale = ease.roundId !== round.roundId || !(ease.worldMax > ease.worldMin)
+    if (stale) {
+      ease.roundId = round.roundId
+      ease.worldMin = worldMin
+      ease.worldMax = worldMax
+      ease.lastNow = now
+    } else {
+      const dt = clamp(now - ease.lastNow, 0, 200)
+      ease.lastNow = now
+      const blend = 1 - Math.exp(-dt / 340)
+      ease.worldMin += (worldMin - ease.worldMin) * blend
+      ease.worldMax += (worldMax - ease.worldMax) * blend
+      // The camera may lag, but the live line must never leave the frame.
+      const margin = (ease.worldMax - ease.worldMin) * 0.05
+      if (line > ease.worldMax - margin) ease.worldMax = line + margin
+      if (line < ease.worldMin + margin) ease.worldMin = line - margin
+    }
+    worldMin = ease.worldMin
+    worldMax = ease.worldMax
+  }
+
   const lineY = lerp(
     bottom,
     top,
@@ -699,12 +734,44 @@ function drawCandles(
       context.fill()
     }
   }
-  context.globalAlpha = battle ? 0.18 : 0.34
+  // This tape is the lead-in, not the round: watermark it as history and rule
+  // a NOW divider where the player's option will go live.
+  const tapeCenterX = (view.left + chartRight) / 2
+  context.globalAlpha = 0.07
+  context.fillStyle = palette.muted
+  context.font = `900 ${clamp((chartRight - view.left) * 0.11, 22, 44)}px ui-monospace, SFMono-Regular, Menlo, monospace`
+  context.textAlign = 'center'
+  context.textBaseline = 'middle'
+  context.fillText('HISTORY', tapeCenterX, (view.top + view.bottom) / 2)
+
+  context.globalAlpha = 0.28
+  context.strokeStyle = palette.muted
+  context.setLineDash([3, 6])
+  context.lineWidth = 1
+  context.beginPath()
+  context.moveTo(Math.round(chartRight) + 0.5, view.top + 14)
+  context.lineTo(Math.round(chartRight) + 0.5, view.bottom)
+  context.stroke()
+  context.setLineDash([])
+  context.globalAlpha = 0.7
+  context.fillStyle = palette.text
+  context.font = '700 9px ui-monospace, SFMono-Regular, Menlo, monospace'
+  context.textAlign = 'center'
+  context.textBaseline = 'top'
+  context.fillText('NOW', chartRight, view.top + 2)
+  if (round.phase === 'placement') {
+    context.globalAlpha = 0.5
+    context.fillStyle = palette.muted
+    context.textAlign = 'left'
+    context.fillText('YOUR OPTION GOES LIVE HERE →', chartRight + 20, view.top + 2)
+  }
+
+  context.globalAlpha = 0.34
   context.fillStyle = palette.muted
   context.font = '600 10px ui-monospace, SFMono-Regular, Menlo, monospace'
   context.textAlign = 'left'
   context.textBaseline = 'bottom'
-  context.fillText('APPROACH', view.left, view.bottom - 4)
+  context.fillText('HISTORY · THE TAPE BEFORE YOUR ROUND', view.left, view.bottom - 4)
   context.restore()
 
   if (!battle && availableWidth > 0 && revealFront >= round.approach.length) {
@@ -1863,12 +1930,13 @@ function drawArena(
   impacts: ImpactBurst[],
   options: DrawOptions,
   now: number,
+  viewEase?: ViewEase | null,
 ): ArenaView | null {
   const context = canvas.getContext('2d')
   if (!context || size.width <= 1 || size.height <= 1) return null
   context.setTransform(size.dpr, 0, 0, size.dpr, 0, 0)
   context.clearRect(0, 0, size.width, size.height)
-  const view = buildView(round, size.width, size.height, impacts, now)
+  const view = buildView(round, size.width, size.height, impacts, now, viewEase)
   drawBackground(
     context,
     round,
@@ -1962,6 +2030,7 @@ export function ArenaCanvas({
   const viewRef = useRef<ArenaView | null>(null)
   const renderOnceRef = useRef<(() => void) | null>(null)
   const pointerRef = useRef<PointerPreview>({ visible: false, dragging: false, y: 0 })
+  const viewEaseRef = useRef<ViewEase>({ roundId: '', worldMin: 0, worldMax: 0, lastNow: 0 })
   const impactsRef = useRef<ImpactBurst[]>([])
   const previousOutcomesRef = useRef<Map<string, Contender['outcome']>>(new Map())
   const previousRoundRef = useRef(round.roundId)
@@ -2079,6 +2148,7 @@ export function ArenaCanvas({
           reducedMotion: shouldReduceMotion,
         },
         now,
+        shouldReduceMotion ? null : viewEaseRef.current,
       )
       if (!shouldReduceMotion && document.visibilityState !== 'hidden') {
         frame = window.requestAnimationFrame(render)
